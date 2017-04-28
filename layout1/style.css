@@ -53,3 +53,16 @@ body {
 .image--circle {
   border-radius: 50%;
 }
+
+.thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.footer {
+  height: 50px;
+  background-color: #404040;
+  margin-top: 30px;
+}
