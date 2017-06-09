@@ -1,0 +1,17 @@
+body {
+  display: grid;
+}
+.Nav {
+  align-items: center;
+  display: flex;
+}
+
+.Nav > h1 {
+  margin-right: auto;
+}
+
+.Nav-items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1em;
+}
