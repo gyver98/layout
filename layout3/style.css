@@ -1,9 +1,108 @@
+
+@font-face {
+  font-family: "Redacted";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62127/redacted-regular.eot");
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62127/redacted-regular.woff2") format("woff2"),
+       url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62127/redacted-regular.woff") format("woff"),
+       url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62127/redacted-regular.otf") format("opentype"),
+       url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/62127/redacted-regular.svg#filename") format("svg");
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background: #456BD9;
+  color: #FFF;
+  font-family: Redacted, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+pre,
+code {
+  font-family: "Source Code Pro", monospace;
+}
+
+pre {
+  background: #0F1C3F;
+  color: #FFF;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+figure {
+  background: #0F1C3F;
+}
+
+figcaption {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1em;
+}
+
+.Prose {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.Prose > * + * {
+  margin-top: 1em;
+}
+
+.Prose-splash {
+  background-color: #aacae1;
+  background-image: linear-gradient(182deg, transparent 74%, #016b59 74.1%), linear-gradient(178deg, transparent 68%, #018e77 68.1%), linear-gradient(181deg, transparent 58%, #01b295 58.1%), linear-gradient(179deg, transparent 50%, #2bbfa7 50.1%);
+  text-align: center;
+}
+
+.Nav {
+  background-color: #0F1C3F;
+  color: #FFF;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1em;
+}
+
+@media (min-width: 40em) {
+  .Nav {
+    background-image: linear-gradient(-95deg, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0) 20%);
+  }
+}
+
 body {
   display: grid;
 }
+
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 12em 1fr;
+  }
+}
+
 .Nav {
   align-items: center;
   display: flex;
+}
+
+@media (min-width: 40em) {
+  .Nav {
+    align-items: start;
+    flex-direction: column;
+  }
 }
 
 .Nav > h1 {
@@ -14,4 +113,24 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 1em;
+}
+
+@media (min-width: 40em) {
+  .Nav-items {
+    grid-auto-flow: row;
+    margin-top: 1em;
+  }
+}
+
+.Prose {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1em, 1fr) [main-start] minmax(0, 40em) [main-end] minmax(1em, 1fr) [full-end];
+}
+
+.Prose > * {
+  grid-column: main;
+}
+
+.Prose-splash {
+  grid-column: full;
 }
