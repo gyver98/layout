@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 500px 2fr 1fr;
+  grid-template-columns: 20px repeat(3, 1fr) 20px;
 }
 * {box-sizing: border-box;}
 .wrapper {
