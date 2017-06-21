@@ -8,11 +8,19 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
-.box {
+* {box-sizing: border-box;}
+.wrapper {
   border: 2px solid #f76707;
   border-radius: 5px;
   background-color: #fff4e6;
+}
+
+.box {
+  border: 2px solid #ffa94d;
+  border-radius: 5px;
+  background-color: #ffd8a8;
+  padding: 1em;
+  color: #d9480f;
 }
 
 .nested {
@@ -22,9 +30,3 @@
   padding: 1em;
 }
 
-* {box-sizing: border-box;}
-.wrapper {
-  border: 2px solid #f76707;
-  border-radius: 5px;
-  background-color: #fff4e6;
-}
