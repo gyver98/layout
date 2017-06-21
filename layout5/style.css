@@ -6,6 +6,15 @@
   grid-auto-rows: 100px;
 }
 
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 * {box-sizing: border-box;}
 .wrapper {
   border: 2px solid #f76707;
