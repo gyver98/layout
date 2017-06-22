@@ -12,12 +12,13 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
- 
+  z-index: 2;
 }
 .box2 {
   grid-column-start: 1;
   grid-row-start: 2;
   grid-row-end: 4;
+  z-index: 1;
 }
 .box {
   border: 2px solid #ffa94d;
