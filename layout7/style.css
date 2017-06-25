@@ -95,3 +95,39 @@ p {
 .bucket {
 	padding: 1.5em;
 }
+
+/*--------------------------------------------------------------
+Use flex to create a three-bucket layout 
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 700px) {
+	@supports (display: flex) {
+		.buckets ul {
+			display: flex;
+			justify-content: space-around;
+		}
+		.buckets li {
+			width: 31%;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+CSS Grid layout for wider screens, when browser supports grid:
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 600px) {
+	/* Layout with CSS Grid */
+	@supports (display: grid) {
+		.grid {
+			display: grid;
+			grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+		}
+
+		.splash-content,
+		.more-content,
+		.buckets ul {
+			grid-column: 2/4;
+		}
+	}
+}
