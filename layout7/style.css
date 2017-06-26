@@ -112,6 +112,24 @@ p {
 	background: #ff7f66;
 }
 
+/* Colophon section */
+
+.colophon {
+	padding: 2em;
+	background: hsl(0, 0%, 10%);
+	color: white;
+	text-align: center;
+}
+
+.colophon a {
+	color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+	border-bottom: 1px solid white;
+}
+
 /*--------------------------------------------------------------
 Use flex to create a three-bucket layout 
 --------------------------------------------------------------*/
@@ -146,7 +164,8 @@ CSS Grid layout for wider screens, when browser supports grid:
 			grid-column: 2/4;
 		}
 
-		.twin {
+		.twin,
+		.colophon aside  {
 			grid-column: span 2;
 		}
 	}
