@@ -100,6 +100,18 @@ p {
 	padding: 2em;
 }
 
+/* Twins section */
+
+.twin {
+	padding: 2em;
+	background: #2185c5;
+	color: white;
+}
+
+.twin:last-of-type {
+	background: #ff7f66;
+}
+
 /*--------------------------------------------------------------
 Use flex to create a three-bucket layout 
 --------------------------------------------------------------*/
@@ -132,6 +144,10 @@ CSS Grid layout for wider screens, when browser supports grid:
 		.more-content,
 		.buckets ul {
 			grid-column: 2/4;
+		}
+
+		.twin {
+			grid-column: span 2;
 		}
 	}
 }
