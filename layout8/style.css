@@ -9,14 +9,18 @@ img {
 	height: auto;
 }
 
-.u-containProse {
-  max-width: 40em;
-  margin-left: auto;
-  margin-right: auto;
-  
+.Prose {
+  display: grid;
+  grid-template-columns: 
+    [full-start] minmax(1em, 1fr)
+    [main-start] minmax(0, 40em) [main-end]
+    minmax(1em, 1fr) [full-end];  
 }
 
-.u-release {
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+.Prose > * {
+  grid-column: main;
+}
+
+.Prose-splash {
+  grid-column: full;
 }
