@@ -4,8 +4,8 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px; 
-  grid-template-rows: [row] auto [row] auto [row];
+  grid-template-columns: repeat(4, [col] 100px); 
+  grid-template-rows: repeat(3, [row] auto);
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
