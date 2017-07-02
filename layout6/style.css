@@ -13,10 +13,17 @@ body {
   grid-area: header;
 }
 
+.footer {
+  grid-area: footer;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 120px); 
-  grid-template-areas: "....... header header" "sidebar content content";
+  grid-template-areas: 
+    "..... header header" 
+    "sidebar content content"
+    "footer footer footer";
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
@@ -30,6 +37,7 @@ body {
   font-size: 150%;
 }
 
-.header {
+.header,
+.footer {
   background-color: #999;
 }
