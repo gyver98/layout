@@ -5,6 +5,9 @@ body {
 .sidebar {
   grid-area: sidebar;
 }
+.sidebar2 {
+  grid-area: sidebar2;
+}
 .content {
   grid-area: content;
 }
@@ -18,15 +21,43 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 120px); 
-  grid-template-areas: 
-    "..... header header" 
-    "sidebar content content"
-    "footer footer footer";
-  grid-gap: 10px;
   background-color: #fff;
   color: #444;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header"
+    "sidebar2"
+    "sidebar"
+    "content"
+    
+    "footer"
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+    "header header"
+    "sidebar content"
+    "sidebar2 sidebar2"
+    "footer footer";
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    grid-gap: 20px;
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+    "header header header"
+    "sidebar content sidebar2"
+    "footer footer footer";
+    max-width: 700px;
+  }
 }
 
 .box {
@@ -40,4 +71,9 @@ body {
 .header,
 .footer {
   background-color: #999;
+}
+
+.sidebar2 {
+  background-color: #ccc;
+  color: #444;
 }
