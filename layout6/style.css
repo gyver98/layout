@@ -4,8 +4,8 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end]; 
-  grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+  grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px; 
+  grid-template-rows: [row] auto [row] auto [row];
   grid-gap: 10px;
   background-color: #fff;
   color: #444;
@@ -20,18 +20,22 @@ body {
 }
 
 .a {
-  grid-column: col1-start / col3-start;
-  grid-row: row1-start;
+  grid-column: col / span 2;
+  grid-row: row;
 }
 .b {
-  grid-column: col3-start;
-  grid-row: row1-start / row2-end;
+  grid-column: col 3 / span 2;
+  grid-row: row;
 }
 .c {
-  grid-column: col1-start;
-  grid-row: row2-start;
+  grid-column: col;
+  grid-row: row 2;
 }
 .d {
-  grid-column: col2-start;
-  grid-row: row2-start;
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
+}
+.e {
+  grid-column: col / span 4;
+  grid-row: row 3;
 }
