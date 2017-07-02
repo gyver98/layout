@@ -1,24 +1,33 @@
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
+body {
+  margin: 40px;
 }
-
-.wrapper > div {
-  flex: 1 1 200px;
-}
-
-* {box-sizing: border-box;}
 
 .wrapper {
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    background-color: #fff4e6;
+  display: grid;
+  grid-template-columns: repeat(3, 100px); 
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
 }
 
-.wrapper > div {
-    border: 2px solid #ffa94d;
-    border-radius: 5px;
-    background-color: #ffd8a8;
-    padding: 1em;
-    color: #d9480f;
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.f {
+  grid-column-start: 1;
+  gird-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
