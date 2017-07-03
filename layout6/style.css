@@ -3,15 +3,10 @@ body {
 }
 
 .wrapper {
-  background-color: #fff;
-  color: #444;
-}
-
-.wrapper {
-  width: 400px;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, [col] 100px);
+  grid-template-rows: repeat(3, [row] auto);
   background-color: #fff;
   color: #444;
 }
@@ -25,22 +20,34 @@ body {
   font-size: 150%;
 }
 
-.section1 {
-  grid-row: 1 / 2;
+.a {
+  grid-column: col / span 2;
+  grid-row: row;
 }
 
-.section2 {
-  grid-row: 3 / 4;
+.b {
+  grid-column: col 3 / span 3;
+  grid-row: row;
 }
 
-.section3 {
-  grid-row: 5 / 6;
+.c {
+  grid-column: col;
+  grid-row: row 2;
 }
 
-.ad1 {
-  grid-row: 2 / 3;
+.d {
+  grid-column: col 2 / span 3;
+  grid-row: row 2;
 }
 
-.ad2 {
-  grid-row: 4 / 5;
+.e {
+  grid-column: col / span 5;
+  grid-row: row 3;
+}
+
+.f {
+  grid-column: col 3 / span 3;
+  grid-row: row 2;
+  background-color: rgba(49,121,207, 0.5);
+  z-index: 20;
 }
