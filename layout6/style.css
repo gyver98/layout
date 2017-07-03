@@ -7,8 +7,6 @@ body {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(6, 100px);
-  grid-template-rows: repeat(3, 100px);
-  grid-auto-flow: column;
  
 }
 
@@ -24,5 +22,12 @@ body {
 .box:nth-child(even) {
   background-color: #ccc;
   color: #000;
+}
+
+.box2 {
+  grid-column: 3 / 6;
+  grid-row: 2 / 3;
+  outline: 2px solid red;
+  z-index: 10;
 }
 
