@@ -2,63 +2,20 @@ body {
   margin: 40px;
 }
 
-.sidebar {
-  grid-area: sidebar;
-}
-.sidebar2 {
-  grid-area: sidebar2;
-}
-.content {
-  grid-area: content;
-}
-
-.header {
-  grid-area: header;
-}
-
-.footer {
-  grid-area: footer;
-}
-
 .wrapper {
   background-color: #fff;
   color: #444;
 }
 
 .wrapper {
+  width: 400px;
   display: grid;
-  grid-gap: 10px;
-  grid-template-areas: 
-    "header"
-    "sidebar2"
-    "sidebar"
-    "content"
-    
-    "footer"
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #fff;
+  color: #444;
 }
 
-@media only screen and (min-width: 500px) {
-  .wrapper {
-    grid-template-columns: 20% auto;
-    grid-template-areas:
-    "header header"
-    "sidebar content"
-    "sidebar2 sidebar2"
-    "footer footer";
-  }
-}
-
-@media only screen and (min-width: 700px) {
-  .wrapper {
-    grid-gap: 20px;
-    grid-template-columns: 120px auto 120px;
-    grid-template-areas:
-    "header header header"
-    "sidebar content sidebar2"
-    "footer footer footer";
-    max-width: 700px;
-  }
-}
 
 .box {
   background-color: #444;
@@ -68,12 +25,22 @@ body {
   font-size: 150%;
 }
 
-.header,
-.footer {
-  background-color: #999;
+.section1 {
+  grid-row: 1 / 2;
 }
 
-.sidebar2 {
-  background-color: #ccc;
-  color: #444;
+.section2 {
+  grid-row: 3 / 4;
+}
+
+.section3 {
+  grid-row: 5 / 6;
+}
+
+.ad1 {
+  grid-row: 2 / 3;
+}
+
+.ad2 {
+  grid-row: 4 / 5;
 }
