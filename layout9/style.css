@@ -1,7 +1,10 @@
+
+.cards {
+  display: flex;
+}
 .card {
-  float: left;
-  width: calc(30%);
-  margin: 0 10px;
+  margin: 0 5px;
+  flex: 1 1 300px;
 }
 
 html {
