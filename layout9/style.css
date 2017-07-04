@@ -1,11 +1,12 @@
 
 .cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-gap: 10px;
 }
 .card {
-  margin: 0 5px;
-  flex: 1 1 300px;
 }
+
 
 html {
   box-sizing: border-box;
@@ -25,7 +26,7 @@ img {
 
 .cards {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 960px;
 }
 
 .card {
