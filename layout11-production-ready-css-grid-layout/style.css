@@ -1,11 +1,18 @@
 .site {
   display: grid;
-  grid-gap: 1em;
+  grid-gap: .5em;
   grid-template-areas:
     "site-header"
     "site-main"
     "widget-area"
     "site-footer"
+}
+
+.box {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  color: #fff;
 }
 
 .site-header {
@@ -25,5 +32,5 @@
 
 .site-footer {
   grid-area: site-footer;
-  background-color: darkblue;
+  background-color:cornflowerblue;
 }
