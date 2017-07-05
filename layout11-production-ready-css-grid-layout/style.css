@@ -1,0 +1,29 @@
+.site {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "site-header"
+    "site-main"
+    "widget-area"
+    "site-footer"
+}
+
+.site-header {
+  grid-area: site-header;
+  background-color: deepskyblue;
+}
+
+.site-main {
+  grid-area: site-main;
+  background-color: green;
+}
+
+.widget-area {
+  grid-area: widget-area;
+  background-color: peru;
+}
+
+.site-footer {
+  grid-area: site-footer;
+  background-color: darkblue;
+}
