@@ -34,8 +34,10 @@
     grid-template-areas: 
       "header"
       "menu"
-      "main"
+      "content"
       "ads"
       "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 50px 30px;
   }
 }
