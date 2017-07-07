@@ -1,0 +1,41 @@
+.hg__header {
+  grid-area: header;
+}
+
+.hg__main {
+  grid-area: content;
+}
+
+.hg__left {
+  grid-area: menu;
+}
+
+.hg__right {
+  grid-area: ads;
+}
+
+.hg__footer {
+  grid-area: footer;
+}
+
+.hg {
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "menu content ads"
+    "footer footer footer"; 
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 100px 1fr 30px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+  .hg {
+    grid-template-areas: 
+      "header"
+      "menu"
+      "main"
+      "ads"
+      "footer";
+  }
+}
