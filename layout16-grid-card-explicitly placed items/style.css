@@ -40,16 +40,19 @@ article.decoration {
 article:nth-child(1) {
   grid-row: 2 / span 3;
   grid-column: 2 / span 2;
+  z-index: 10;
 }
 
 article:nth-child(2) {
   grid-row: 1 / span 3;
   grid-column: 5 / span 2;
+  z-index: 10;
 }
 
 article:nth-child(3) {
   grid-row: 3 / span 3;
   grid-column: 4 / span 2;
+  z-index: 10;
 }
 
 article:nth-child(4) {
@@ -104,6 +107,13 @@ article:nth-child(13) {
 article:nth-child(14) {
   grid-row: 2 / span 2;
   grid-column: 1;
+
+}
+
+article:nth-child(15) {
+  grid-row: 2 ;
+  grid-column: 3 / span 5;
+
 }
 
 img {
