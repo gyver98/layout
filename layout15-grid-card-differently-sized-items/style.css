@@ -18,6 +18,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 1rem;
   grid-auto-flow: dense;
+  align-items: start;
 }
 
 article {
