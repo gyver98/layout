@@ -12,9 +12,9 @@ img {
 .Prose {
   display: grid;
   grid-template-columns: 
-    [full-start] minmax(1em, 1fr)
+    [a-start] minmax(1em, 1fr)
     [main-start] minmax(0, 40em) [main-end]
-    minmax(1em, 1fr) [full-end];  
+    minmax(1em, 1fr) [a-end];  
 }
 
 .Prose > * {
@@ -22,5 +22,5 @@ img {
 }
 
 .Prose-splash {
-  grid-column: full;
+  grid-column: a;
 }

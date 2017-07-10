@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 80%;
+  background: #ccc;
+  line-height: 1.2;
+}
+
+.F {
+  margin: 4em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 1rem;
+}
+
+article {
+  padding: 20px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background: #fff;
+}
+
+img {
+  width: 100%;
+}

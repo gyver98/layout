@@ -1,7 +1,23 @@
+.site-main {
+  padding: 1em;
+  max-width: 40em;
+  
+}
 
+@media screen and (min-width: 600px) {
+	.site-main {
+		padding: 2em;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.site-main {
+		max-width: 45em;
+	}
+}
 
 @supports (grid-area: auto) {
-  .site {
+  /*.site {
       display: grid;
       grid-gap: .5em;
       grid-template-areas: 
@@ -9,10 +25,11 @@
         "main"
         "sidebar"
         "footer";
-  }
-  @media screen and (min-width: 56.25em) {
+  }*/
+  @media screen and (min-width: 61.875em) {
     .site {
-      grid-template-columns: 15em 1fr;
+      display: grid;
+      grid-template-columns: 16.5em 1fr;
       grid-template-rows: 1fr minmax(1em, auto);
       grid-template-areas: 
         "header main"
