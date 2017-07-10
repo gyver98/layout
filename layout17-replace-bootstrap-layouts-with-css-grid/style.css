@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://source.unsplash.com/mNWsZDYUCFs/1500x1000');
+    background-size: cover;
+}
+
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  color: #ffffff;
+}
+
+.button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+}
+
+.thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image--circle {
+  border-radius: 50%;
+}
+
+.footer {
+  height: 50px;
+  background-color: #404040;
+  margin-top: 30px;
+}
