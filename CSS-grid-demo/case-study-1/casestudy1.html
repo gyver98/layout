@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <title>CSS grid demo</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prism.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="prism.js"></script>
   <script src="demo.js"></script>
 </head>
 
@@ -52,27 +54,27 @@
           <h3>CSS</h3>
 
           <div id="demo-1-ex-1" class="code-example code-1">
-            <pre>
+            <pre><code class="language-css">
             /* Three columns: 100px each */
             .grid-container {
                 display: grid;
                 grid-template-columns: 100px 100px 100px;
                 grid-gap: 20px;
-            }</pre>
+            }</code></pre>
           </div>
 
           <div id="demo-1-ex-2" class="code-example code-2">
-            <pre>
+            <pre><code class="language-css">
             /* Three columns: 1 fraction, 2 fractions, 3 fractions */
             .grid-container {
                 display: grid;
                 grid-template-columns: 1fr 2fr 3fr;
                 grid-gap: 20px;
-            }</pre>
+            }</code></pre>
           </div>
 
           <div id="demo-1-ex-3" class="code-example code-3">
-            <pre>
+            <pre><code class="language-css">
             /* Three columns: 50%, 100px, and the remaining available fraction */
             /* Two rows: 100px and 200px */
             .grid-container {
@@ -80,13 +82,13 @@
                 grid-template-columns: 50% 100px 1fr;
                 grid-template-rows: 100px 200px;
                 grid-gap: 20px;
-            }</pre>
+            }</code></pre>
           </div>
         </div>
 
       </div>
     </article>
-    <article id="casestudy-one" class="section demo-section example-1">
+    <article id="demo-four" class="section demo-section example-1">
       <div class="content grid-content">
         <header>
           <h2>Card Layout</h2>
@@ -120,54 +122,65 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
             </article>
             <article>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P1-Food_with_love.jpg">
-              <h3>Card 4</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </article>
-            <article>
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Birds_on_stick_Shanghai_Qibao.jpg">
-              <h3>Card 5</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-            </article>
-            <article>
               <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P3-Egyptian_food_Koshary.jpg">
+              <h3>Card 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur</p> 
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Mexican_food.jpg">
+              <h3>Card 5</h3>
+              <p>Lorem ipsum dolor sit</p> 
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Restaurant_food_Kunming_Yunnan.jpg">
               <h3>Card 6</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet ipsum dolor sit amet.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p> 
             </article>
           </div>
         </div>
-        <div id="demo-one-code" class="demo-code">
+        <div id="demo-four-code" class="demo-code">
           <h3>CSS</h3>
 
           <div id="demo-1-ex-1" class="code-example code-1">
-            <pre>
+            <pre><code class="language-css">
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 grid-gap: 1rem;
-            }</pre>
+            }</code></pre>
           </div>
 
           <div id="demo-1-ex-2" class="code-example code-2">
-            <pre>
+            <pre><code class="language-css">
             /* align-items: start */
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 grid-gap: 1rem;
                 align-items: start;
-            }</pre>
+            }</code></pre>
           </div>
 
           <div id="demo-1-ex-3" class="code-example code-3">
-            <pre>
+            <pre><code class="language-css">
             /* align-items: end */
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
                 grid-gap: 1rem;
                 align-items: end;
-            }</pre>
+            }</code></pre>
+          </div>
+
+          <div id="demo-1-ex-4" class="code-example code-4">
+            <pre><code class="language-css">
+            /* align-items: center */
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                grid-gap: 1rem;
+                align-items: center;
+            }</code></pre>
           </div>
         </div>
       </div>
