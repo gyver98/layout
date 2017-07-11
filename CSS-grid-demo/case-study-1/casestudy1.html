@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS grid demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="demo.js"></script>
+</head>
+
+<body>
+  <section id="demos">
+    <article id="demo-one" class="section demo-section example-1">
+      <div class="content grid-content">
+        <header>
+          <h2>Fixed or Flexible</h2>
+        </header>
+
+        <div class="demo-intro">
+          <p>
+          You can create a grid with fixed track sizes or with flexible sizes using percentages or the new <a href="https://www.w3.org/TR/css3-grid-layout/#fr-unit" rel="external"><code>fr</code> fractional unit</a>.
+          </p>
+        </div>
+
+        <ul class="demo-controls">
+          <li><button type="button" class="example-switch active" data-example-class="example-1" data-example="demo-1-example-1" aria-controls="demo-1-example-1">Example 1</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-1-example-2" aria-controls="demo-1-example-2">Example 2</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-1-example-3" aria-controls="demo-1-example-3">Example 3</button></li>
+        </ul>
+
+        <div class="demo-space">
+          <div class="fallback">
+            <img src="/media/img/mozorg/developer/css-grid/screen-demo1.e5e4f9c9ea67.jpg" alt="" width="800" height="440">
+
+            <p>
+            It looks like your web browser doesn’t support CSS Grid.<br> To see this demo, try viewing this page in <a href="/en-US/firefox/new/">the latest Firefox</a>.
+            </p>
+          </div>
+
+          <div class="grid-container">
+            <div class="item-1">1</div>
+            <div class="item-2">2</div>
+            <div class="item-3">3</div>
+            <div class="item-4">4</div>
+            <div class="item-5">5</div>
+            <div class="item-6">6</div>
+          </div>
+        </div>
+
+        <div id="demo-one-code" class="demo-code">
+          <h3>CSS</h3>
+
+          <div id="demo-1-ex-1" class="code-example code-1">
+            <pre>
+            /* Three columns: 100px each */
+            .grid-container {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-gap: 20px;
+            }</pre>
+          </div>
+
+          <div id="demo-1-ex-2" class="code-example code-2">
+            <pre>
+            /* Three columns: 1 fraction, 2 fractions, 3 fractions */
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr 2fr 3fr;
+                grid-gap: 20px;
+            }</pre>
+          </div>
+
+          <div id="demo-1-ex-3" class="code-example code-3">
+            <pre>
+            /* Three columns: 50%, 100px, and the remaining available fraction */
+            /* Two rows: 100px and 200px */
+            .grid-container {
+                display: grid;
+                grid-template-columns: 50% 100px 1fr;
+                grid-template-rows: 100px 200px;
+                grid-gap: 20px;
+            }</pre>
+          </div>
+        </div>
+
+      </div>
+    </article>
+    <article id="casestudy-one" class="section demo-section example-1">
+      <div class="content grid-content">
+        <header>
+          <h2>Card Layout</h2>
+        </header>
+        <div class="demo-intro">
+          <p>
+            Variations of Card Layout
+          </p>
+        </div>
+        <ul class="demo-controls">
+          <li><button type="button" class="example-switch active" data-example-class="example-1" data-example="demo-2-example-1" aria-controls="demo-2-example-1">Example 1</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-2-example-2" aria-controls="demo-2-example-2">Example 2</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-2-example-3" aria-controls="demo-2-example-3">Example 3</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-2-example-4" aria-controls="demo-2-example-4">Example 4</button></li>
+        </ul>
+        <div class="demo-space">
+          <div class="grid-container">
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Paleo_food.jpg">
+              <h3>Card 1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article>    
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Indian_bengali_food.jpg">
+              <h3>Card 2</h3>
+              <p>Lorem ipsum dolor sit amet</p> 
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Food_in_Miyajima.jpg">
+              <h3>Card 3</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P1-Food_with_love.jpg">
+              <h3>Card 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Birds_on_stick_Shanghai_Qibao.jpg">
+              <h3>Card 5</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </article>
+            <article>
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P3-Egyptian_food_Koshary.jpg">
+              <h3>Card 6</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet ipsum dolor sit amet.</p>
+            </article>
+          </div>
+        </div>
+        <div id="demo-one-code" class="demo-code">
+          <h3>CSS</h3>
+
+          <div id="demo-1-ex-1" class="code-example code-1">
+            <pre>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                grid-gap: 1rem;
+            }</pre>
+          </div>
+
+          <div id="demo-1-ex-2" class="code-example code-2">
+            <pre>
+            /* align-items: start */
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                grid-gap: 1rem;
+                align-items: start;
+            }</pre>
+          </div>
+
+          <div id="demo-1-ex-3" class="code-example code-3">
+            <pre>
+            /* align-items: end */
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                grid-gap: 1rem;
+                align-items: end;
+            }</pre>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</body>
+
+</html>
