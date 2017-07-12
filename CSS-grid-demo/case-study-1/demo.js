@@ -8,7 +8,7 @@
         var demo = $("#" + demoId);
         var switches = $(this).parents(".demo-controls").find(".example-switch");
         var newClass = $(this).data("example-class");
-        demo.removeClass("example-1 example-2 example-3 example-4 example-5 example-6").addClass(newClass);
+        demo.removeClass("example-1 example-2 example-3 example-4 example-5 example-6 example-7").addClass(newClass);
         switches.removeClass("active");
         $(this).addClass("active");
         window.dataLayer.push({

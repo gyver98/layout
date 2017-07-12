@@ -128,6 +128,9 @@
           <h3 class="title-example title-6">
             Card layout : differently sized items - dense
           </h3>
+          <h3 class="title-example title-7">
+            Card layout : explicitly placed items - for wider browsers only 
+          </h3>
         </div>
         <div class="demo-intro">
           <p>
@@ -141,6 +144,7 @@
           <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-2-example-4" aria-controls="demo-2-example-4">Example 4</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-5" data-example="demo-2-example-5" aria-controls="demo-2-example-5">Example 5</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-6" data-example="demo-2-example-6" aria-controls="demo-2-example-6">Example 6</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-7" data-example="demo-2-example-7" aria-controls="demo-2-example-7">Example 7</button></li>
         </ul>
         <div class="demo-space">
           <div class="grid-container">
@@ -253,7 +257,7 @@
           </pre>
         </div>
 
-<div id="demo-1-ex-5" class="code-example code-6">
+<div id="demo-1-ex-6" class="code-example code-6">
 <pre rel="css" class="language-css">
   <code class="language-css">
   /* grid-container - grid-auto-flow: dense */
@@ -273,6 +277,52 @@
   article:nth-child(5) {
     grid-column: span 2;
     grid-row: span 2;
+  }
+  </code>
+</pre>
+</div>
+
+<div id="demo-1-ex-7" class="code-example code-7">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* grid-container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(110px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-rows: 1fr;
+    align-items: start;
+  }
+  
+  /* first card item */
+  article:nth-child(1) {
+    grid-row: 2 / span 3;
+    grid-column: 2 / span 2;
+  }
+  /* second card item */
+  article:nth-child(2) {
+    grid-row: 1 / span 3;
+    grid-column: 5 / span 2;
+  }
+  /* third card item */
+  article:nth-child(3) {
+    grid-row: 3 / span 3;
+    grid-column: 4 / span 2;
+  }
+  /* fourth card item */
+  article:nth-child(4) {
+    grid-row: 4 / span 3;
+    grid-column: 6 / span 2;
+  }
+  /* fifth card item */
+  article:nth-child(5) {
+    grid-row: 5 / span 3;
+    grid-column: 1 / span 2;
+  }
+  /* sixth card item */
+  article:nth-child(6) {
+    grid-row: 6 / span 3;
+    grid-column: 3 / span 2;
   }
   </code>
 </pre>
