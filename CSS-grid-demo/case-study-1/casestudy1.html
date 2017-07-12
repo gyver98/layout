@@ -18,7 +18,18 @@
         <header>
           <h2>Fixed or Flexible</h2>
         </header>
-
+        <div class="demo-title">
+          <h3 class="title-example title-1">
+            Three columns layout : 100px each 
+          </h3>
+          <h3 class="title-example title-2">
+            Three columns layout : 1 fraction, 2 fractions, 3 fractions 
+          </h3>
+          <h3 class="title-example title-3">
+            Three columns : 50%, 100px, and the remaining available fraction
+            Two rows: 100px and 200px 
+          </h3>
+        </div>
         <div class="demo-intro">
           <p>
           You can create a grid with fixed track sizes or with flexible sizes using percentages or the new <a href="https://www.w3.org/TR/css3-grid-layout/#fr-unit" rel="external"><code>fr</code> fractional unit</a>.
@@ -78,7 +89,8 @@
           </div>
 
           <div id="demo-1-ex-3" class="code-example code-3">
-            <pre><code class="language-css">
+            <pre rel="css" class="language-css">
+              <code class="language-css">
             /* Three columns: 50%, 100px, and the remaining available fraction */
             /* Two rows: 100px and 200px */
             .grid-container {
@@ -146,7 +158,8 @@
           <h3>CSS</h3>
 
           <div id="demo-1-ex-1" class="code-example code-1">
-            <pre><code class="language-css">
+            <pre rel="css" class="language-css">
+              <code class="language-css">
             .grid-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -155,7 +168,8 @@
           </div>
 
           <div id="demo-1-ex-2" class="code-example code-2">
-            <pre><code class="language-css">
+            <pre rel="css" class="language-css">
+              <code class="language-css">
             /* align-items: start */
             .grid-container {
                 display: grid;
@@ -166,7 +180,8 @@
           </div>
 
           <div id="demo-1-ex-3" class="code-example code-3">
-            <pre><code class="language-css">
+            <pre rel="css" class="language-css">
+              <code class="language-css">
             /* align-items: end */
             .grid-container {
                 display: grid;
@@ -177,7 +192,8 @@
           </div>
 
           <div id="demo-1-ex-4" class="code-example code-4">
-            <pre><code class="language-css">
+            <pre rel="css" class="language-css">
+              <code class="language-css">
             /* align-items: center */
             .grid-container {
                 display: grid;

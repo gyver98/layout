@@ -523,11 +523,6 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     min-width: 0
 }
 
-.casestudy-code {
-    display: none;
-    min-width: 0
-}
-
 .demo-code h3 {
     border: 0;
     clip: rect(0 0 0 0);
@@ -556,6 +551,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     padding: 1em 20px;
     width: 100%
 }*/
+
+.demo-title .title-example {
+    display:none;
+}
 
 .demo-space {
     background-color: #fff;
@@ -675,7 +674,12 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     @media screen and (min-width: 760px) {
         .demo-section .grid-content {
             grid-template-columns:minmax(450px,1fr) minmax(220px,.5fr);
-            grid-template-areas: 'header header' 'demo   intro' 'demo   controls' 'code   .....'
+            grid-template-areas: 
+                'header header'
+                'title title' 
+                'demo   intro' 
+                'demo   controls' 
+                'code   .....'
         }
     }
 
@@ -690,6 +694,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     .demo-section header h2:before {
         left: 0;
         top: 0
+    }
+
+    .demo-section .demo-title {
+        grid-area: title;
     }
 
     .demo-section .demo-intro {
@@ -728,7 +736,11 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     @media screen and (min-width:1000px) {
         .demo-section .grid-content {
             grid-template-columns:4rem 1fr minmax(300px,.5fr);
-            grid-template-areas: 'header demo intro' 'header demo controls' 'header code .....'
+            grid-template-areas: 
+                'header title .....' 
+                'header demo intro'
+                'header demo controls' 
+                'header code .....'
         }
 
         .demo-section .grid-content header {
@@ -762,6 +774,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
+#demo-one.example-1 .title-1 {
+    display: block
+}
+
 #demo-one.example-2 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
@@ -769,6 +785,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #demo-one.example-2 .code-2 {
+    display: block
+}
+
+#demo-one.example-2 .title-2 {
     display: block
 }
 
@@ -780,6 +800,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #demo-one.example-3 .code-3 {
+    display: block
+}
+
+#demo-one.example-3 .title-3 {
     display: block
 }
 
