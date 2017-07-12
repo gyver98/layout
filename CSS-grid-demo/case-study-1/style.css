@@ -543,7 +543,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: none
 }
 
-.demo-code pre {
+/*.demo-code pre {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -555,7 +555,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     overflow: auto;
     padding: 1em 20px;
     width: 100%
-}
+}*/
 
 .demo-space {
     background-color: #fff;
