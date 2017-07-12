@@ -122,6 +122,12 @@
           <h3 class="title-example title-4">
             Card layout : align items center
           </h3>
+          <h3 class="title-example title-5">
+            Card layout : differently sized items
+          </h3>
+          <h3 class="title-example title-6">
+            Card layout : differently sized items - dense
+          </h3>
         </div>
         <div class="demo-intro">
           <p>
@@ -133,6 +139,8 @@
           <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-2-example-2" aria-controls="demo-2-example-2">Example 2</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-2-example-3" aria-controls="demo-2-example-3">Example 3</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-2-example-4" aria-controls="demo-2-example-4">Example 4</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-5" data-example="demo-2-example-5" aria-controls="demo-2-example-5">Example 5</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-6" data-example="demo-2-example-6" aria-controls="demo-2-example-6">Example 6</button></li>
         </ul>
         <div class="demo-space">
           <div class="grid-container">
@@ -173,53 +181,107 @@
 
           <div id="demo-1-ex-1" class="code-example code-1">
             <pre rel="css" class="language-css">
-              <code class="language-css">
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                grid-gap: 1rem;
-            }</code></pre>
+  <code class="language-css">
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+  }</code>
+            </pre>
           </div>
 
           <div id="demo-1-ex-2" class="code-example code-2">
             <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* align-items: start */
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                grid-gap: 1rem;
-                align-items: start;
-            }</code></pre>
+  <code class="language-css">
+  /* align-items: start */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+    align-items: start;
+  }</code>
+            </pre>
           </div>
 
           <div id="demo-1-ex-3" class="code-example code-3">
             <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* align-items: end */
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                grid-gap: 1rem;
-                align-items: end;
-            }</code></pre>
+  <code class="language-css">
+  /* align-items: end */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+    align-items: end;
+  }</code>
+            </pre>
           </div>
 
           <div id="demo-1-ex-4" class="code-example code-4">
             <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* align-items: center */
-            .grid-container {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                grid-gap: 1rem;
-                align-items: center;
-            }</code></pre>
+  <code class="language-css">
+  /* align-items: center */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+    align-items: center;
+  }</code>
+            </pre>
           </div>
+
+          <div id="demo-1-ex-5" class="code-example code-5">
+            <pre rel="css" class="language-css">
+  <code class="language-css">
+  /* grid-container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  /* first card item - grid-column : 2 span grid-row : 2 span */
+  article:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  /* fifth card item - grid-column : 2 span grid-row : 2 span */
+  article:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  </code>
+          </pre>
         </div>
+
+<div id="demo-1-ex-5" class="code-example code-6">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* grid-container - grid-auto-flow: dense */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+  }
+  
+  /* first card item - grid-column : 2 span grid-row : 2 span */
+  article:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  /* fifth card item - grid-column : 2 span grid-row : 2 span */
+  article:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  </code>
+</pre>
+</div>
+
       </div>
-    </article>
-  </section>
+    </div>
+  </article>
+</section>
 </body>
 
 </html>
