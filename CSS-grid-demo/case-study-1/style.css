@@ -556,6 +556,14 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display:none;
 }
 
+.demo-title h3 {
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #F05A28, #E80A89) 1 100%;
+    padding-left: 15px;
+    font-family: Futura,'Fira Sans',X-LocaleSpecific,sans-serif;
+}
+
 .demo-space {
     background-color: #fff;
     background-color: rgba(255,255,255,.85);
@@ -668,7 +676,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         grid-gap: 1.5rem 30px;
         grid-template-columns: none;
         grid-template-rows: auto;
-        grid-template-areas: 'header' 'demo' 'controls' 'intro' 'code'
+        grid-template-areas: 'header' 'title' 'demo' 'controls' 'intro' 'code'
     }
 
     @media screen and (min-width: 760px) {
@@ -1082,6 +1090,22 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #demo-four.example-4 .code-4 {
+    display: block
+}
+
+#demo-four.example-1 .title-1 {
+    display: block
+}
+
+#demo-four.example-2 .title-2 {
+    display: block
+}
+
+#demo-four.example-3 .title-3 {
+    display: block
+}
+
+#demo-four.example-4 .title-4 {
     display: block
 }
 
