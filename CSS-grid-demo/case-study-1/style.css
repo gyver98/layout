@@ -510,11 +510,11 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 .demo-controls .example-switch:focus,.demo-controls .example-switch:hover {
-    background-color: #91df00
+    background-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
 }
 
 .demo-controls .example-switch.active {
-    background-color: #a964ea;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
     color: #fff
 }
 
@@ -653,28 +653,30 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 .demo-space .item-2 {
-    background-color: rgba(145,223,0,.75);
-    border-color: transparent
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border: none;
 }
 
 .demo-space .item-3 {
     background-color: transparent;
-    border-color: rgba(169,100,234,.75)
+    border-image: linear-gradient(to bottom right, #fa709a 0%, #fee140 100%);
+    border-image-slice: 1;
 }
 
 .demo-space .item-4 {
-    background-color: rgba(0,0,0,.25);
-    border-color: transparent
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border: none;
 }
 
 .demo-space .item-5 {
-    background-color: rgba(169,100,234,.75);
-    border-color: transparent
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    border: none;
 }
 
 .demo-space .item-6 {
     background-color: transparent;
-    border-color: rgba(145,223,0,.75)
+    border-image: linear-gradient(to bottom right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
 }
 
 @supports (display: grid) {
