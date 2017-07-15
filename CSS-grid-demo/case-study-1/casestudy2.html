@@ -29,9 +29,6 @@
             Three columns : 50%, 100px, and the remaining available fraction,
             Two rows: 100px and 200px 
           </h3>
-          <h3 class="title-example title-4">
-            Line-based placement : positioning the elements using line-based placement properties
-          </h3>
         </div>
         <div class="demo-intro">
           <p>
@@ -43,7 +40,6 @@
           <li><button type="button" class="example-switch active" data-example-class="example-1" data-example="demo-1-example-1" aria-controls="demo-1-example-1">Example 1</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-1-example-2" aria-controls="demo-1-example-2">Example 2</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-1-example-3" aria-controls="demo-1-example-3">Example 3</button></li>
-          <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-1-example-4" aria-controls="demo-1-example-4">Example 4</button></li>
         </ul>
 
         <div class="demo-space">
@@ -103,57 +99,6 @@
                 grid-template-rows: 100px 200px;
                 grid-gap: 20px;
             }</code></pre>
-          </div>
-
-          <div id="demo-1-ex-4" class="code-example code-4">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 50%, 100px, and the remaining available fraction */
-            /* Two rows: 100px and 200px */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 100px 1fr;
-                grid-template-rows: 100px 200px;
-                grid-gap: 20px;
-            }
-            
-            .item-1 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-2 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-3 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-4 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-5 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-6 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }  
-              </code></pre>
           </div>
         </div>
 

@@ -822,6 +822,63 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
+#demo-one.example-4 .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px
+}
+
+#demo-one.example-4 .item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#demo-one.example-4 .item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#demo-one.example-4 .item-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#demo-one.example-4 .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#demo-one.example-4 .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#demo-one.example-4 .item-6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#demo-one.example-4 .code-4 {
+    display: block
+}
+
+#demo-one.example-4 .title-4 {
+    display: block
+}
+
 #demo-two h2:before {
     background-position: center -77px
 }
