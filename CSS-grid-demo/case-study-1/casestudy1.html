@@ -108,11 +108,13 @@
           <div id="demo-1-ex-4" class="code-example code-4">
             <pre rel="css" class="language-css">
               <code class="language-css">
-            /* Three columns: 50%, 100px, and the remaining available fraction */
+            /* Three columns: 200px, and the remaining available fraction */
             /* Two rows: 100px and 200px */
+            /* positioning the elements in the markup using line-based placement properties */
+            /* if an item will only span one grid track you may omit the -end value */
             .grid-container {
                 display: grid;
-                grid-template-columns: 1fr 100px 1fr;
+                grid-template-columns: 1fr 200px 1fr;
                 grid-template-rows: 100px 200px;
                 grid-gap: 20px;
             }
