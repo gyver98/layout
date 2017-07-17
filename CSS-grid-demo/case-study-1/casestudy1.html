@@ -181,7 +181,10 @@
             Defining Grid Areas : grid-area and grid-template-areas properties
           </h3>
           <h3 class="title-example title-5">
-            Defining Grid Areas : with empty track
+            Redefining Grid Areas with Media Queries (Let's try to resize the widnow)
+          </h3>
+          <h3 class="title-example title-6">
+            Defining Grid Areas with align-self properties
           </h3>
         </div>
         <div class="demo-intro">
@@ -382,6 +385,79 @@
 </pre>
 </div>
 
+<div id="demo-2-ex-5" class="code-example code-5">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* 3 break points  : 500px, 800px, 1000px */
+  /* define the grid area as before outside of the Media Queries (small screen size)
+     and then redefine the grid and the position of the elements onto that grid
+     (wider screen size) */
+
+  .grid-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+      'header' 
+      'sidebar-1' 
+      'content'
+      'sidebar-2' 
+      'footer';
+  }
+
+@media only screen and (min-width:500px) {
+  .grid-container {
+     grid-template-columns: 20% auto;
+     grid-template-areas:
+       'header header'
+       'sidebar-1 content'
+       'sidebar-2 sidebar-2'
+       'footer footer';  
+   } 
+}
+
+@media only screen and (min-width:600px) {
+   .grid-container {
+     grid-template: repeat(4,1fr) / repeat(3,1fr);
+     grid-gap: 20px;
+     grid-template-areas: 
+      'header header header' 
+      'sidebar-1 content content' 
+      'sidebar-2 content content' 
+      'footer footer footer';  
+   }  
+}
+
+/* using a . or a sequence like ... indicates an empty track */
+@media only screen and (min-width:800px) {
+   .grid-container {
+     grid-template: repeat(4,1fr) / repeat(3,1fr);
+     grid-gap: 20px;
+     grid-template-areas: 
+      'header header ...' 
+      'content content sidebar-1' 
+      'content content sidebar-2'  
+      'footer footer ...';  
+   }  
+}
+
+  .item-1 {
+    grid-area: header
+  }
+  .item-2 {
+    grid-area: sidebar-1
+  }
+  .item-3 {
+    grid-area: sidebar-2
+  }
+  .item-4 {
+    grid-area: content
+  }
+  .item-5 {
+    grid-area: footer
+  }
+  </code>
+</pre>
+</div>
 
         </div>
 
