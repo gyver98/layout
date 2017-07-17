@@ -887,29 +887,45 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 #demo-two.example-1 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
     grid-gap: 20px
 }
 
 #demo-two.example-1 .item-1 {
-    grid-column: 2;
-    grid-row: 2
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 #demo-two.example-1 .item-2 {
-    grid-column: 1;
-    grid-row: 1
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 #demo-two.example-1 .item-3 {
-    grid-column: 3;
-    grid-row: 3
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#demo-two.example-1 .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-#demo-two.example-1 .item-4 {
-    grid-column: 3;
-    grid-row: 1
+#demo-two.example-1 .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
+
 
 #demo-two.example-1 .code-1 {
     display: block
