@@ -30,7 +30,7 @@
             Two rows: 100px and 200px 
           </h3>
           <h3 class="title-example title-4">
-            Line-based placement : positioning the elements using line-based placement properties
+            Grid auto-flow column
           </h3>
         </div>
         <div class="demo-intro">
@@ -65,99 +65,61 @@
           </div>
         </div>
 
-        <div id="demo-one-code" class="demo-code">
-          <h3>CSS</h3>
+<div id="demo-one-code" class="demo-code">
+<h3>CSS</h3>
 
-          <div id="demo-1-ex-1" class="code-example code-1">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-              /* Three columns: 100px each */
-              .grid-container {
-                  display: grid;
-                  grid-template-columns: 100px 100px 100px;
-                  grid-gap: 20px;
-              }
-              </code>
-            </pre>
-          </div>
-
-          <div id="demo-1-ex-2" class="code-example code-2">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 1 fraction, 2 fractions, 3 fractions */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 2fr 3fr;
-                grid-gap: 20px;
-            }</code></pre>
-          </div>
-
-          <div id="demo-1-ex-3" class="code-example code-3">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 50%, 100px, and the remaining available fraction */
-            /* Two rows: 100px and 200px */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 50% 100px 1fr;
-                grid-template-rows: 100px 200px;
-                grid-gap: 20px;
-            }</code></pre>
-          </div>
-
-          <div id="demo-1-ex-4" class="code-example code-4">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 200px, and the remaining available fraction */
-            /* Two rows: 100px and 200px */
-            /* positioning the elements in the markup using line-based placement properties */
-            /* if an item will only span one grid track you may omit the -end value */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 200px 1fr;
-                grid-template-rows: 100px 200px;
-                grid-gap: 20px;
-            }
-            
-            .item-1 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-2 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-3 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-4 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-5 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-6 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }  
-              </code></pre>
-          </div>
-        </div>
+<div id="demo-1-ex-1" class="code-example code-1">
+  <pre rel="css" class="language-css">
+    <code class="language-css">
+    /* Three columns: 100px each */
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 20px;
+    }
+    </code>
+  </pre>
+</div>
+<div id="demo-1-ex-2" class="code-example code-2">
+  <pre rel="css" class="language-css">
+    <code class="language-css">
+  /* Three columns: 1 fraction, 2 fractions, 3 fractions */
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 3fr;
+      grid-gap: 20px;
+  }</code></pre>
+</div>
+<div id="demo-1-ex-3" class="code-example code-3">
+  <pre rel="css" class="language-css">
+    <code class="language-css">
+  /* Three columns: 50%, 100px, and the remaining available fraction */
+  /* Two rows: 100px and 200px */
+  .grid-container {
+      display: grid;
+      grid-template-columns: 50% 100px 1fr;
+      grid-template-rows: 100px 200px;
+      grid-gap: 20px;
+  }</code></pre>
+</div>
+<div id="demo-1-ex-4" class="code-example code-4">
+  <pre rel="css" class="language-css">
+    <code class="language-css">
+  /* The default behavior of Grid Auto Flow is to layout the elements by row, 
+     working along the row until there are no more slots then moving on to the next row.
+     This default behavior can be changed by using the grid-auto-flow property.
+     If you specify column then the elements will be laid out column by column. */
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 300px 1fr;
+      grid-template-rows: 100px 200px;
+      grid-gap: 20px;
+      grid-auto-flow: column;
+   }
+    </code></pre>
+</div>
+</div>
 
       </div>
     </article>
