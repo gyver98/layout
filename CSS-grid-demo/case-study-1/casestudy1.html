@@ -175,8 +175,7 @@
             Line-based placement shorthand : grid-row and grid-column using shorthand syntax declaring the start and end values at once 
           </h3>
           <h3 class="title-example title-3">
-            Three columns : 50%, 100px, and the remaining available fraction,
-            Two rows: 100px and 200px 
+            Line-based placement spanning tracks with the span keyword
           </h3>
           <h3 class="title-example title-4">
             Line-based placement : positioning the elements using line-based placement properties
@@ -298,6 +297,43 @@
   .item-5 {
     grid-column: 1 / 2; /* same as grid-column: 1 */
     grid-row: 1 / 2;    /* same as grid-row: 1 */
+  }
+  </code>
+</pre>
+</div>
+
+<div id="demo-2-ex-3" class="code-example code-3">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* Repeat a 1fr column 3 times */
+  /* Three rows: 1fr 200px 1fr */
+  /* using the span keyword rather than targeting the Grid Line by number */
+  /* also using the defaults for row and column end, which is to span 1 */
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 200px 1fr;
+    grid-gap: 20px
+  }
+
+  .item-1 {
+    grid-column: 2 / span 2;
+  }
+  .item-2 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  .item-3 {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .item-4 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .item-5 {
+    grid-column: 2;
+    grid-row: 2;
   }
   </code>
 </pre>

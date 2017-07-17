@@ -978,7 +978,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 #demo-two.example-3 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40% 100px 1fr;
+    grid-template-rows: 1fr 200px 1fr;
     grid-gap: 20px
 }
 
@@ -1006,11 +1006,11 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 
-#demo-two.example-3 .code-2 {
+#demo-two.example-3 .code-3 {
     display: block
 }
 
-#demo-two.example-3 .title-2 {
+#demo-two.example-3 .title-3 {
     display: block
 }
 
