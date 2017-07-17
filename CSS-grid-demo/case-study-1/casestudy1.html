@@ -165,14 +165,14 @@
     <article id="demo-two" class="section demo-section example-1">
       <div class="content grid-content">
         <header>
-          <h2>Place and Align</h2>
+          <h2>Placement & Alignment</h2>
         </header>
         <div class="demo-title">
           <h3 class="title-example title-1">
-            Three columns layout : 100px each 
+            Line-based placement : positioning the elements using line-based placement properties
           </h3>
           <h3 class="title-example title-2">
-            Three columns layout : 1 fraction, 2 fractions, 3 fractions 
+            Line-based placement shorthand : grid-row and grid-column using shorthand syntax declaring the start and end values at once 
           </h3>
           <h3 class="title-example title-3">
             Three columns : 50%, 100px, and the remaining available fraction,
@@ -193,8 +193,8 @@
           <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-2-example-2" aria-controls="demo-2-example-2">Example 2</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-2-example-3" aria-controls="demo-2-example-3">Example 3</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-2-example-4" aria-controls="demo-2-example-4">Example 4</button></li>
-          <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-2-example-3" aria-controls="demo-2-example-3">Example 3</button></li>
-          <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-2-example-4" aria-controls="demo-2-example-4">Example 4</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-5" data-example="demo-2-example-5" aria-controls="demo-2-example-5">Example 5</button></li>
+          <li><button type="button" class="example-switch" data-example-class="example-6" data-example="demo-2-example-6" aria-controls="demo-2-example-6">Example 6</button></li>
         </ul>
 
         <div class="demo-space">
@@ -218,29 +218,90 @@
         <div id="demo-one-code" class="demo-code">
           <h3>CSS</h3>
 
-          <div id="demo-2-ex-1" class="code-example code-1">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-              /* Three columns: 100px each */
-              .grid-container {
-                  display: grid;
-                  grid-template-columns: 100px 100px 100px;
-                  grid-gap: 20px;
-              }
-              </code>
-            </pre>
-          </div>
+<div id="demo-2-ex-1" class="code-example code-1">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* Repeat a 1fr column 3 times */
+  /* Two rows: 100px and 200px */
+  /* positioning the elements in the markup using line-based placement properties */
+  /* if an item will only span one grid track you may omit the -end value */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px
+  }
 
-          <div id="demo-2-ex-2" class="code-example code-2">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 1 fraction, 2 fractions, 3 fractions */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 2fr 3fr;
-                grid-gap: 20px;
-            }</code></pre>
-          </div>
+  .item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .item-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .item-3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .item-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  </code>
+</pre>
+</div>
+
+<div id="demo-2-ex-2" class="code-example code-2">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* Repeat a 1fr column 3 times */
+  /* Two rows: 100px and 200px */
+  /* positioning the elements in the markup using shorthand syntax declaring the start and end values at once */
+  /* if the end value is spanning one track then it would be valid to omit the / and end value */
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px
+  }
+
+  .item-1 {
+    grid-column: 2 / 3; /* same as grid-column: 2 */
+    grid-row: 1 / 2;    /* same as grid-row: 1 */ 
+  }
+  .item-2 {
+    /* not able to omit the end vaule as it is spanning more than one track */
+    grid-column: 2 / 4; 
+    grid-row: 2 / 3;    /* same as grid-row: 2 */
+  }
+  .item-3 {
+    grid-column: 3 / 4; /* same as grid-column: 3 */
+    grid-row: 1 / 2;    /* same as grid-row: 1 */
+  }
+  .item-4 {
+    grid-column: 1 / 2; /* same as grid-column: 1 */
+    grid-row: 2 / 3;    /* same as grid-row: 2 */
+  }
+  .item-5 {
+    grid-column: 1 / 2; /* same as grid-column: 1 */
+    grid-row: 1 / 2;    /* same as grid-row: 1 */
+  }
+  </code>
+</pre>
+</div>
 
           <div id="demo-2-ex-3" class="code-example code-3">
             <pre rel="css" class="language-css">
