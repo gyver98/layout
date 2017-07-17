@@ -459,6 +459,55 @@
 </pre>
 </div>
 
+<div id="demo-2-ex-6" class="code-example code-6">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* align-self : aligns the content inside a grid item along the column axis - 
+     start - aligns the content to the top of the grid area
+     end - aligns the content to the bottom of the grid area
+     center - aligns the content in the center of the grid area
+     stretch - fills the whole height of the grid area (default)
+  */
+  /* In the minmax() function the first value is the minimum size which the tracks to be, 
+     the second is the maximum */
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+      'item-1 item-1 item-2 item-2' 
+      'item-1 item-1 item-2 item-2' 
+      'item-3 item-3 item-4 item-4'
+      'item-3 item-3 item-4 item-4'
+      '... item-5 item-5 ...';
+  }
+
+  .item-1 {
+    grid-area: item-1;
+    align-self: start;
+  }
+  .item-2 {
+    grid-area: item-2;
+    align-self: end;
+  }
+  .item-3 {
+    grid-area: item-3;
+    align-self: stretch;
+  }
+  .item-4 {
+    grid-area: item-4;
+    align-self: center;
+  }
+  .item-5 {
+    grid-area: item-5;
+    align-self: stretch;
+  }
+  </code>
+</pre>
+</div>
+
         </div>
 
       </div>

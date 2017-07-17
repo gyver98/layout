@@ -1129,6 +1129,52 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
+#demo-two.example-6 .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+      'item-1 item-1 item-2 item-2' 
+      'item-1 item-1 item-2 item-2' 
+      'item-3 item-3 item-4 item-4'
+      'item-3 item-3 item-4 item-4'
+      '... item-5 item-5 ...';
+}
+
+#demo-two.example-6 .item-1 {
+    grid-area: item-1;
+    align-self: start;
+}
+
+#demo-two.example-6 .item-2 {
+    grid-area: item-2;
+    align-self: end;
+}
+
+#demo-two.example-6 .item-3 {
+    grid-area: item-3;
+    align-self: stretch;
+}
+
+#demo-two.example-6 .item-4 {
+    grid-area: item-4;
+    align-self: center;
+}
+
+#demo-two.example-6 .item-5 {
+    grid-area: item-5;
+    align-self: stretch;
+}
+
+#demo-two.example-6 .code-6 {
+    display: block;
+}
+
+#demo-two.example-6 .title-6 {
+    display: block;
+}
+
 /*
 #demo-two.example-3 .grid-container {
     display: grid;
