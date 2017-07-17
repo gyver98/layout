@@ -178,7 +178,10 @@
             Line-based placement spanning tracks with the span keyword
           </h3>
           <h3 class="title-example title-4">
-            Line-based placement : positioning the elements using line-based placement properties
+            Defining Grid Areas : grid-area and grid-template-areas properties
+          </h3>
+          <h3 class="title-example title-5">
+            Defining Grid Areas : with empty track
           </h3>
         </div>
         <div class="demo-intro">
@@ -318,6 +321,7 @@
 
   .item-1 {
     grid-column: 2 / span 2;
+    grid-row: 1;
   }
   .item-2 {
     grid-column: 1;
@@ -339,71 +343,46 @@
 </pre>
 </div>
 
-          <div id="demo-2-ex-3" class="code-example code-3">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 50%, 100px, and the remaining available fraction */
-            /* Two rows: 100px and 200px */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 50% 100px 1fr;
-                grid-template-rows: 100px 200px;
-                grid-gap: 20px;
-            }</code></pre>
-          </div>
+<div id="demo-2-ex-4" class="code-example code-4">
+<pre rel="css" class="language-css">
+  <code class="language-css">
+  /* 4 rows : repeat a 1fr row 4 times
+     3 columns : repeat a 1fr column 3 times */
+  /* creating named areas on the grid-area property
+     and then using the grid-template-areas property to describe 
+     where on the Grid these elements should sit */
 
-          <div id="demo-2-ex-4" class="code-example code-4">
-            <pre rel="css" class="language-css">
-              <code class="language-css">
-            /* Three columns: 200px, and the remaining available fraction */
-            /* Two rows: 100px and 200px */
-            /* positioning the elements in the markup using line-based placement properties */
-            /* if an item will only span one grid track you may omit the -end value */
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 200px 1fr;
-                grid-template-rows: 100px 200px;
-                grid-gap: 20px;
-            }
-            
-            .item-1 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-2 {
-              grid-column-start: 2;
-              grid-column-end: 3;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-3 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-4 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }
-            .item-5 {
-              grid-column-start: 1;
-              grid-column-end: 2;
-              grid-row-start: 2;
-              grid-row-end: 3;
-            }
-            .item-6 {
-              grid-column-start: 3;
-              grid-column-end: 4;
-              grid-row-start: 1;
-              grid-row-end: 2;
-            }  
-              </code></pre>
-          </div>
+  .grid-container {
+    display: grid;
+    grid-template: repeat(4,1fr) / repeat(3,1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+      'header header header' 
+      'sidebar-1 content content' 
+      'sidebar-2 content content' 
+      'footer footer footer';
+  }
+
+  .item-1 {
+    grid-area: header
+  }
+  .item-2 {
+    grid-area: sidebar-1
+  }
+  .item-3 {
+    grid-area: sidebar-2
+  }
+  .item-4 {
+    grid-area: content
+  }
+  .item-5 {
+    grid-area: footer
+  }
+  </code>
+</pre>
+</div>
+
+
         </div>
 
       </div>
