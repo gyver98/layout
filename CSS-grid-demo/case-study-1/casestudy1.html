@@ -535,14 +535,13 @@
         </header>
         <div class="demo-title">
           <h3 class="title-example title-1">
-            Layering items using z-index 
+            Layering items using z-index example 1
           </h3>
           <h3 class="title-example title-2">
-            Three columns layout : 1 fraction, 2 fractions, 3 fractions 
+            Layering items using z-index example 2 
           </h3>
           <h3 class="title-example title-3">
-            Three columns : 50%, 100px, and the remaining available fraction,
-            Two rows: 100px and 200px 
+            Layering items using z-index example 3  
           </h3>
           <h3 class="title-example title-4">
             Grid auto-flow column
@@ -559,7 +558,6 @@
           <li><button type="button" class="example-switch active" data-example-class="example-1" data-example="demo-3-example-1" aria-controls="demo-3-example-1">Example 1</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-2" data-example="demo-3-example-2" aria-controls="demo-3-example-2">Example 2</button></li>
           <li><button type="button" class="example-switch" data-example-class="example-3" data-example="demo-3-example-3" aria-controls="demo-3-example-3">Example 3</button></li>
-          <li><button type="button" class="example-switch" data-example-class="example-4" data-example="demo-3-example-4" aria-controls="demo-3-example-4">Example 4</button></li>
         </ul>
 
         <div class="demo-space">
@@ -580,19 +578,19 @@
             <div class="item-6">6</div>
           </div>
           <div class="grid-container container-2">
-            <div class="item-text">G</div>
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
-            <div class="item-4"></div>
-            <div class="item-5"></div>
-            <div class="item-6"></div>
-            <div class="item-7"></div>
-            <div class="item-8"></div>
+            <div class="item-g">G</div>
+            <div class="item-1">1</div>
+            <div class="item-2">2</div>
+            <div class="item-3">3</div>
+            <div class="item-4">4</div>
+            <div class="item-5">5</div>
+            <div class="item-6">6</div>
+            <div class="item-7">7</div>
+            <div class="item-8">8</div>
           </div>
           <div class="grid-container container-3">
             <header>
-              <h1>Portraits of
+              <h1>Shapes of
                 <br>
                 nature
               </h1>
@@ -665,42 +663,117 @@
 <div id="demo-3-ex-2" class="code-example code-2">
   <pre rel="css" class="language-css">
     <code class="language-css">
-  /* Three columns: 1 fraction, 2 fractions, 3 fractions */
+  /* Repeat 5 1fr rows named "row" and 3 1fr columns named "col" */
   .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 2fr 3fr;
-      grid-gap: 20px;
-  }</code></pre>
+    display: grid;
+    grid-template: repeat(5,[row] 1fr) / repeat(3,[col] 1fr);
+    grid-gap: .5rem;
+  }
+  .item-g {
+    grid-area: 2 / 1 / 5 / 3;
+    /* grid-row-start: 2;
+       grid-column-start: 1;
+       grid-row-end: 5;
+       grid-column-end: 3; */
+    font-size: calc(10rem + 25vw);
+    z-index: 1;
+    line-height: 1;
+    margin: -2rem 0 0;
+    color: #b4b4b4;
+  }
+
+  .item-1 {
+    grid-column: col 1;
+    grid-row: row 1;
+  }
+  .item-2 {
+    grid-column: col 1 / span 2;
+    grid-row: row 2;
+  }
+  .item-3 {
+    grid-column: col 2;
+    grid-row: row 1;
+  }
+  .item-4 {
+    grid-column: col 3;
+    grid-row: row 2;
+  }
+  .item-5 {
+    grid-column: col 3;
+    grid-row: row 3;
+  }
+  .item-6 {
+    grid-column: col 1;
+    grid-row: row 4 / span 2;
+  }
+  .item-7 {
+    grid-column: col 2;
+    grid-row: row 4;
+    z-index: 2;
+  }
+  .item-8 {
+    grid-column: col 3;
+    grid-row: row 5;
+  }
+  </code></pre>
 </div>
 <div id="demo-3-ex-3" class="code-example code-3">
   <pre rel="css" class="language-css">
     <code class="language-css">
-  /* Three columns: 50%, 100px, and the remaining available fraction */
-  /* Two rows: 100px and 200px */
+  /* Four columns and rows : 2fr 1fr 1fr 2fr */
+
   .grid-container {
-      display: grid;
-      grid-template-columns: 50% 100px 1fr;
-      grid-template-rows: 100px 200px;
-      grid-gap: 20px;
-  }</code></pre>
-</div>
-<div id="demo-3-ex-4" class="code-example code-4">
-  <pre rel="css" class="language-css">
-    <code class="language-css">
-  /* The default behavior of Grid Auto Flow is to layout the elements by row, 
-     working along the row until there are no more slots then moving on to the next row.
-     This default behavior can be changed by using the grid-auto-flow property.
-     If you specify column then the elements will be laid out column by column. */
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 1fr 2fr;
+    max-width: 900px;
+    grid-gap: 3px;
+  }
   
-  .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 300px 1fr;
-      grid-template-rows: 100px 200px;
-      grid-gap: 20px;
-      grid-auto-flow: column;
-   }
-    </code></pre>
+  /* header : Shapes of nature, b : background of header */
+  header, b {
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 2;
+    text-align: center;
+    align-self: center;
+    z-index: 1;
+    writing-mode: horizontal-tb;
+  }
+
+  header {
+    z-index: 2;
+  }
+
+  b {
+    background: white;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+
+  figure:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    align-self: end;
+  }
+
+  figure:nth-of-type(2) {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+    align-self: end;
+  }
+
+  figure:nth-of-type(3) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+  }
+
+  figure:nth-of-type(4) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+  }
+  </code></pre>
 </div>
+
 </div>
 
       </div>
