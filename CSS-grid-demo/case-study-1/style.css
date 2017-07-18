@@ -683,6 +683,16 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     border-image-slice: 1;
 }
 
+.demo-space .item-7 {
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    border: none;
+}
+
+.demo-space .item-8 {
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    border: none;
+}
+
 @supports (display: grid) {
     .demo-section .grid-content {
         display:grid;
@@ -1244,43 +1254,59 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 #demo-three.example-2 .container-2 {
     display: grid;
-    grid-template: repeat(8,[row] 1fr) / repeat(8,[col] 1fr);
+    grid-template: repeat(5,[row] 1fr) / repeat(3,[col] 1fr);
     grid-gap: 20px;
 }
 
+#demo-three.example-2 .container-2 .item-text {
+    grid-area: 2 / 1 / 5 / 3;
+    font-size: 24em;
+    z-index: 1;
+    line-height: 1;
+    margin: -2rem 0 0;
+}
+
 #demo-three.example-2 .container-2 .item-1 {
-    grid-column: col 1 / span 4;
-    grid-row: row 1 / span 2;
-    z-index: 5;
+    grid-column: col 1;
+    grid-row: row 1;
 }
 
 #demo-three.example-2 .container-2 .item-2 {
-    grid-column: col 4 / span 3;
-    grid-row: row 1 / span 5;
-    z-index: 3;
+    grid-column: col 1 / span 2;
+    grid-row: row 2;
 }
 
 #demo-three.example-2 .container-2 .item-3 {
-    grid-column: col 1;
-    grid-row: row 2 / span 4;
-    z-index: 2;
+    grid-column: col 2;
+    grid-row: row 1;
 }
 
 #demo-three.example-2 .container-2 .item-4 {
-    grid-column: col 3 / span 3;
-    grid-row: row 2 / span 3;
-    z-index: 4;
+    grid-column: col 3;
+    grid-row: row 2;
 }
 
 #demo-three.example-2 .container-2 .item-5 {
-    grid-column: col 1 / span 2;
-    grid-row: row 5 / span 2
+    grid-column: col 3;
+    grid-row: row 3;
 }
 
 #demo-three.example-2 .container-2 .item-6 {
-    grid-column: col 2/ span 4;
-    grid-row: row 5 / span 2;
+    grid-column: col 1;
+    grid-row: row 4 / span 2;
 }
+
+#demo-three.example-2 .container-2 .item-7 {
+    grid-column: col 2;
+    grid-row: row 4;
+    z-index: 2;
+}
+
+#demo-three.example-2 .container-2 .item-8 {
+    grid-column: col 3;
+    grid-row: row 5;
+}
+
 
 #demo-three.example-2 .container-2 .code-1 {
     display: block
