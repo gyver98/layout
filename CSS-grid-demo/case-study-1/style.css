@@ -1859,17 +1859,43 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block;
     margin: 0 auto 1em;
     border: 10px solid #fff;
-    width: 100%;
 }
 
 .gallery li {
-    max-width: 420px;
-    position: relative;
-    margin: 0 auto 1.5em;
     margin: 10px;
-    border: 1px solid #999;
-    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    border: 5px solid #312f30;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
+    list-style: none;
 }
+
+.gallery li > img {
+    height: auto;
+    max-width: 100%;
+}
+
+.gallery li > .meta {
+    background: #2f2f31;
+    position: relative;
+    font-size: 0.85em;
+    white-space: nowrap;
+    padding: 8px 10px 4px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.25);
+}
+
+.gallery li > .meta > h3, span {
+    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.gallery li > .meta > h3 {
+    margin: 4px 0 12px 0;
+    font-weight: bold;
+}
+
+.gallery li > .meta > .user-name {
+    font-size: 0.85em;
+}    
 
 @media screen and (min-width: 760px) {
     .gallery li {
@@ -1898,7 +1924,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #resources .resources-top {
-    background-color: #000;
+    background-color: #191919;
     color: #fff
 }
 
