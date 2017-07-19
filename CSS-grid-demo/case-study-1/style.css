@@ -1867,7 +1867,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     list-style: none;
 }
 
-.gallery li > img {
+.gallery li > a > img {
     height: auto;
     max-width: 100%;
 }
