@@ -276,8 +276,18 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
             text-transform: lowercase;
             height: auto;
             width: auto;
-            background-image: none;
+            background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
             text-indent: 52px;
+        }
+
+        #page-intro .page-title-2 {
+            border-top: 5px solid rgba(12, 12, 10, 0.8);
+            border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+            font-weight: 600;
+            grid-column: 6 / span 3;
+            grid-row: 1;
+            align-self: center;
+            font-size: 3rem;
         }
 
         #page-intro .moz-logo {
