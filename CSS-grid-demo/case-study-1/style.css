@@ -525,7 +525,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     height: 120%;
     left: -50%;
     position: absolute;
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
     width: 100%
 }
 
@@ -1865,6 +1865,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     border: 5px solid #312f30;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
     list-style: none;
+    padding: 8px 10px 4px;
 }
 
 .gallery li > a > img {
@@ -1872,27 +1873,19 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     max-width: 100%;
 }
 
-.gallery li > .meta {
-    background: #2f2f31;
-    position: relative;
-    font-size: 0.85em;
-    white-space: nowrap;
-    padding: 8px 10px 4px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.25);
-}
-
-.gallery li > .meta > h3, span {
+.gallery li > h3, .user-name {
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     line-height: 1.5;
     font-weight: 400;
+    font-size: 1.2rem;
 }
 
-.gallery li > .meta > h3 {
+.gallery li > h3 {
     margin: 4px 0 12px 0;
     font-weight: bold;
 }
 
-.gallery li > .meta > .user-name {
+.gallery li > .user-name {
     font-size: 0.85em;
 }    
 
@@ -1939,16 +1932,16 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #resources .resources-top h2:before {
-    background: url("/media/img/mozorg/developer/css-grid/icon-sprite.6d323eb6dc88.png") center -306px no-repeat;
+    background: url("img/resources.svg");
     -webkit-background-size: 65px 382px;
     background-size: 65px 382px;
     content: '';
     display: block;
-    height: 65px;
+    height: 262px;
     left: 50%;
     margin-left: -33px;
     position: absolute;
-    top: 0;
+    top: -156px;
     width: 65px
 }
 
