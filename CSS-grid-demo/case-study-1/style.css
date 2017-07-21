@@ -1654,6 +1654,81 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
+/** demo-five start **/
+
+#demo-five.example-1 .container-1 {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "menu"
+      "main"
+      "side"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 50px 40px;
+    min-height: 50vh;
+}
+
+@media screen and (min-width: 500px) {
+    #demo-five.example-1 .container-1 {
+        grid-template-areas: 
+        "header header header"
+        "menu main side"
+        "footer footer footer";
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-rows: 100px 1fr 50px;
+        grid-gap: 3px;
+    }
+}
+
+
+#demo-five.example-1 .container-1 .grid-header {
+    grid-area: header;
+}
+
+#demo-five.example-1 .container-1 .grid-main {
+    grid-area: main;
+}
+
+#demo-five.example-1 .container-1 .grid-left {
+    grid-area: menu;
+}
+
+#demo-five.example-1 .container-1 .grid-right {
+    grid-area: side;
+}
+
+#demo-five.example-1 .container-1 .grid-footer {
+    grid-area: footer;
+}
+
+#demo-five.example-1 .container-1 .grid-header, .grid-main, .grid-left, .grid-right, .grid-footer {
+    padding: 15px;
+    text-align: center;
+}    
+
+#demo-five.example-1 .container-1 .grid-header {
+    background: #F2D0DA;
+    writing-mode: horizontal-tb;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#demo-five.example-1 .container-1 .grid-left, .grid-right {
+    background: #CFD7D7;
+    font-size: 1rem;
+}
+
+#demo-five.example-1 .container-1 .grid-footer {
+    background: #4B5E73;
+    
+    color: #fff
+}
+
+
+
 /*@media screen and (min-width: 480px) {
     #demo-one.example-1 .grid-container {
         grid-template-columns:100px 100px 100px
