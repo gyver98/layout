@@ -1036,7 +1036,7 @@
         </header>
         <div class="demo-title">
           <h3 class="title-example title-1">
-            Holy grail layout
+            Holy grail layout with CSS grid : a web page layout that consists of four sections - a header, footer, and a main content section with two sidebars.
           </h3>
           <h3 class="title-example title-2">
             Card layout : align items start
@@ -1070,6 +1070,55 @@
             <footer class="grid-footer">Footer</footer>
           </div>
         </div>
+        <div id="demo-five-code" class="demo-code">
+          <h3>CSS</h3>
+
+          <div id="demo-5-ex-1" class="code-example code-1">
+            <pre rel="css" class="language-css">
+  <code class="language-css">
+  /* Defining the grid with the grid-area property */
+  .grid-header { grid-area: header; }
+  .grid-main { grid-area: main; }
+  .grid-left { grid-area: menu; }
+  .grid-right { grid-area: side; }
+  .grid-footer { grid-area: footer; }
+  
+  /* Specifying the layout of the grid in a visual way using 
+     grid-template-areas property. On smaller devices, 
+     all the grid items should be displayed in a single column. */
+
+  .container-1 {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "menu"
+      "main"
+      "side"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 50px 1fr 50px 40px;
+    min-height: 50vh;
+  }
+  
+  /* Making it Responsive :  On bigger devices, all the grid items 
+     should be placed in 3 columns layout */
+
+  @media screen and (min-width: 500px) {
+    .container-1 {
+      grid-template-areas: 
+        "header header header"
+        "menu   main   side"
+        "footer footer footer";
+      grid-template-columns: 15% 1fr 15%;
+      grid-template-rows: 100px 1fr 50px;
+      grid-gap: 3px;
+    }  
+  }
+
+  </code>
+            </pre>
+          </div>
+        </div>  
       </div>    
   </article>
 </section>

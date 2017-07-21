@@ -1673,7 +1673,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     #demo-five.example-1 .container-1 {
         grid-template-areas: 
         "header header header"
-        "menu main side"
+        "menu   main   side"
         "footer footer footer";
         grid-template-columns: 15% 1fr 15%;
         grid-template-rows: 100px 1fr 50px;
@@ -1727,6 +1727,13 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     color: #fff
 }
 
+#demo-five.example-1 .code-1 {
+    display: block
+}
+
+#demo-five.example-1 .title-1 {
+    display: block
+}
 
 
 /*@media screen and (min-width: 480px) {
