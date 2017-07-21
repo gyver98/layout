@@ -1125,6 +1125,48 @@
   </code>
             </pre>
           </div>
+
+<div id="demo-5-ex-2" class="code-example code-2">
+            <pre rel="css" class="language-css">
+  <code class="language-css">
+    
+  /* Defining three columns : the first and last are gutters 
+     with a minimum size of 3em but the ability to stretch to fill 1fr.
+     Between them is the main content column which can stretch to 
+     a maximum width of 40em.
+     
+     Assigning names in brackets which are entirly optional, 
+     but they would make the rest of our styles easier to maintain. */
+
+  .container-2 {
+    display: grid;
+    grid-template-columns: 
+      [full-start] minmax(3em, 1fr) 
+      [main-start] minmax(0, 40em) [main-end] 
+      minmax(3em, 1fr) [full-end];
+  }
+  
+  /* Instructing all child elements of container-2 to occupy the main column */
+
+  .container-2 > * {
+    grid-column: main;
+  } 
+
+  /* Making a class for specific elements we'd like to occupy the full container width */
+
+  .container-2 > .full-image {
+    grid-column: full;
+  } 
+
+
+
+  </code>
+            </pre>
+          </div>
+
+        </div>
+        <div class="demo-screenshot screenshot-2">
+          <img src="img/grid-lines.svg" alt="">  
         </div>  
       </div>    
   </article>

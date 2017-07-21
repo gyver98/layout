@@ -1,0 +1,42 @@
+<svg width="800" height="410" viewBox="0 0 800 410" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      @import "https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;text=minmaxfullmainstartend014-%28%29";
+      
+      text {
+        fill: #FFF;
+        font-family: "Source Code Pro", monospace;
+        font-size: 16px;
+      }
+    </style>
+  </defs>
+  <rect fill="#0F1C3F" x="0" y="0" width="800" height="410"></rect>
+  <rect fill="#456BD9" x="85" y="65" width="630" height="250"></rect>
+  <g id="lines" stroke="#FFFFFF" stroke-width="3" stroke-linecap="square" stroke-dasharray="6,12">
+    <path d="M85.5,59.5 L85.5,317"></path>
+    <path d="M716.5,61.5 L716.5,319"></path>
+    <path d="M534.5,61.5 L534.5,319"></path>
+    <path d="M266.5,61.5 L266.5,319"></path>
+  </g>
+  <text x="175" y="196" text-anchor="middle">
+    minmax(1em,1fr)
+  </text>
+  <text x="400" y="196" text-anchor="middle">
+    minmax(0,40em)
+  </text>
+  <text x="625" y="196" text-anchor="middle">
+    minmax(1em,1fr)
+  </text>
+  <text x="85" y="352" text-anchor="middle">
+    [full-start]
+  </text>
+  <text x="265" y="352" text-anchor="middle">
+    [main-start]
+  </text>
+  <text x="535" y="352" text-anchor="middle">
+    [main-end]
+  </text>
+  <text x="715" y="352" text-anchor="middle">
+    [full-end]
+  </text>
+</svg>

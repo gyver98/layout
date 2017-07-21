@@ -628,6 +628,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: none
 }
 
+.demo-screenshot {
+    display: none;
+}
+
 /*.demo-code pre {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -789,7 +793,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         grid-gap: 1.5rem 30px;
         grid-template-columns: none;
         grid-template-rows: auto;
-        grid-template-areas: 'header' 'title' 'demo' 'controls' 'intro' 'code'
+        grid-template-areas: 'header' 'title' 'demo' 'controls' 'intro' 'screenshot' 'code'
     }
 
     @media screen and (min-width: 760px) {
@@ -800,7 +804,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
                 'title title' 
                 'demo   intro' 
                 'demo   controls' 
-                'code   .....'
+                'code   screenshot'
         }
     }
 
@@ -848,6 +852,14 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         grid-area: code
     }
 
+    .demo-section .demo-screenshot {
+         grid-area: screenshot;
+    }
+
+    .demo-section .demo-screenshot > img {
+        width: 100%;
+    }    
+
     .demo-section .fallback {
         display: none
     }
@@ -861,7 +873,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
                 'header title .....' 
                 'header demo intro'
                 'header demo controls' 
-                'header code .....'
+                'header code screenshot'
         }
 
         .demo-section .grid-content header {
@@ -1757,11 +1769,15 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 } 
 
 #demo-five.example-2 .code-2 {
-    display: block
+    display: block;
 }
 
 #demo-five.example-2 .title-2 {
-    display: block
+    display: block;
+}
+
+#demo-five.example-2 .screenshot-2 {
+    display: block;
 }
 
 /*@media screen and (min-width: 480px) {
