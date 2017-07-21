@@ -2046,221 +2046,35 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     color: #9d4ee7
 }
 
-#download-firefox {
-    background: #a964ea url("/media/img/mozorg/developer/css-grid/download-pattern.beb6d0d43fc3.svg") center center repeat;
-    -webkit-background-size: 260px 161px;
-    background-size: 260px 161px;
-    color: #fff
-}
-
-#download-firefox .content {
-    max-width: 980px
-}
-
-#download-firefox .fx-download {
-    text-align: center
-}
-
-#download-firefox .fx-download .button {
-    border-radius: 0;
-    border-width: 4px
-}
-
-#download-firefox .fx-download ul.download-list {
-    margin-bottom: 6px
-}
-
-#download-firefox h2 {
-    font-size: 21px;
-    font-size: 1.3125rem;
-    color: #000;
-    font-family: Futura,'Fira Sans',X-LocaleSpecific,sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    text-align: center
+.browser-support li img {
+    width: 100%;
 }
 
 @media screen and (min-width: 760px) {
-    #download-firefox h2 {
-        font-size:28px;
-        font-size: 1.75rem
-    }
-}
-
-#download-firefox h2 span {
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    background: #fff;
-    padding: 0 20px
-}
-
-#download-firefox h2 br {
-    display: none
-}
-
-#download-firefox p {
-    margin: .5em 0 0;
-    padding: 0 20px
-}
-
-#download-firefox .old-fx {
-    display: none
-}
-
-#download-firefox a:link,#download-firefox a:visited {
-    color: #fff
-}
-
-#download-firefox a:link:active,#download-firefox a:link:focus,#download-firefox a:link:hover,#download-firefox a:visited:active,#download-firefox a:visited:focus,#download-firefox a:visited:hover {
-    color: #fff
-}
-
-#download-firefox .fx-privacy-link {
-    font-size: 12px;
-    font-size: .75rem
-}
-
-#download-firefox.stuck {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 99
-}
-
-#download-firefox.stuck .content {
-    max-width: 740px
-}
-
-#download-firefox.stuck .cta,#download-firefox.stuck .fx-download {
-    padding-top: 10px
-}
-
-#download-firefox.stuck h2 {
-    font-size: 22px;
-    font-size: 1.375rem
-}
-
-#download-firefox.stuck .fx-download .button {
-    font-size: 16px;
-    font-size: 1rem
-}
-
-#download-firefox .close {
-    overflow: hidden;
-    text-indent: 120%;
-    white-space: nowrap;
-    background: 0 0;
-    border: 0;
-    cursor: pointer;
-    height: 35px;
-    padding: 0;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 35px
-}
-
-#download-firefox .close:before {
-    font-size: 20px;
-    font-size: 1.25rem;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    color: #fff;
-    content: '\d7';
-    display: block;
-    height: 30px;
-    left: 0;
-    line-height: 30px;
-    position: absolute;
-    text-align: center;
-    text-indent: 0;
-    top: 0;
-    vertical-align: middle;
-    width: 30px
-}
-
-@media screen and (min-width: 760px) {
-    #download-firefox .cta {
-        -webkit-box-sizing:border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-        width: 66.664%;
-        padding-left: 10px;
-        padding-right: 10px
+    
+    .browser-support li {
+        float:left;
+        margin: 0 1.5% 1.5em;
+        width: 20%
     }
 
-    #download-firefox .fx-download {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        float: left;
-        width: 33.332%;
-        padding-left: 10px;
-        padding-right: 10px
-    }
-
-    #download-firefox h2 {
-        text-align: left;
-        margin: 0
-    }
-
-    #download-firefox h2 br {
-        display: block
+    .browser-support li:nth-child(5n+1) {
+        clear: left
     }
 
     @supports (display: grid) {
-        #download-firefox .grid-content {
+        .browser-support {
+            width: 300px;
             display:grid;
-            grid-template-columns: 60% 40%;
-            grid-gap: 0 40px
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            align-self: center;
         }
 
-        #download-firefox .grid-content .cta {
+        .browser-support li {
             float: none;
-            grid-column: 1;
-            width: auto
-        }
-
-        #download-firefox .grid-content .fx-download {
-            float: none;
-            grid-column: 2;
+            margin: 0;
             width: auto
         }
     }
-}
-
-.not-firefox #download-firefox .old-fx {
-    display: none
-}
-
-.not-firefox #download-firefox .not-fx {
-    display: block
-}
-
-@supports (display: grid) {
-    .not-firefox #download-firefox .not-fx {
-        display:grid
-    }
-}
-
-.old-firefox #download-firefox .not-fx {
-    display: none
-}
-
-.old-firefox #download-firefox .old-fx {
-    display: block
-}
-
-@supports (display: grid) {
-    .old-firefox #download-firefox .old-fx {
-        display:grid
-    }
-}
-
-.firefox-has-grid #download-firefox,.not-desktop #download-firefox {
-    display: none
 }
