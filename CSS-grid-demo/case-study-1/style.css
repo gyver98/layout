@@ -1994,6 +1994,9 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     padding: 8px 10px 4px;
 }
 
+.gallery li:hover {
+    transform: scale(1.05);
+}
 .gallery li > a > img {
     height: auto;
     max-width: 100%;
