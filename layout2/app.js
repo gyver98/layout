@@ -86,7 +86,7 @@ const Link = ({
   onClick
 }) => {
   if (active) {
-    return <span>{children}</span>;
+    return <span>{children}</span>
   }
 
   return (

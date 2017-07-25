@@ -7,6 +7,7 @@
   display: block;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(20deg, #D1D7EF, #5C61F5);
 }
 
 .container:after {
@@ -17,13 +18,11 @@
 
 .skew {
   position: absolute;
-  top: -30%;
+  top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  width: 110%;
-  transform: skew(60deg, -30deg) scaleY(.66667);
-  -webkit-backface-visibility: hidden; 
+  transform: translateX(-34vw) translateY(-293px) rotateX(45deg) rotateZ(45deg);
+  transform-origin: 50% 100%;
 }
 
 .g {
