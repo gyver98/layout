@@ -701,7 +701,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 .demo-space .grid-container > article {
-  padding: 20px;
+  padding: 5px;
   margin: 10px;
   background: #fff;
   border: 1px solid #999;
