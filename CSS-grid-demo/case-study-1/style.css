@@ -1793,14 +1793,21 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     grid-column: main;
 }    
 
-#demo-five.example-3 .container-3 > figure {
+#demo-five.example-3 .container-3 > .full-image {
     grid-column: full;
+    background: #0F1C3F;
 }   
 
-#demo-five.example-3 .container-3 > figure img {
+/* #demo-five.example-3 .container-3 > figure div {
+    grid-column: main / full;
+}     */
+
+#demo-five.example-3 .container-3 img {
     display: block;
     max-width: 100%;
 } 
+
+
 
 /*@media screen and (min-width: 480px) {
     #demo-one.example-1 .grid-container {
