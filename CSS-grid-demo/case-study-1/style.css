@@ -1812,6 +1812,21 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     padding: 1em;
 } 
 
+@media screen and (min-width: 800px) {
+    #demo-five.example-3 .container-3 > .full-image {
+        align-items: end;
+        display: inherit;
+        grid-template-columns: inherit;        
+    }
+    #demo-five.example-3 .container-3 > .full-image > img {
+        grid-column: main / full;
+    }
+
+    #demo-five.example-3 .container-3 > .full-image > span {
+        order: -1;
+        text-align: right;
+    }
+}    
 
 
 /*@media screen and (min-width: 480px) {
