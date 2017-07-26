@@ -1807,6 +1807,11 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     max-width: 100%;
 } 
 
+#demo-five.example-3 .container-3 span {
+    color: #fff;
+    padding: 1em;
+} 
+
 
 
 /*@media screen and (min-width: 480px) {
