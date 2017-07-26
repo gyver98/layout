@@ -1780,6 +1780,28 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block;
 }
 
+#demo-five.example-3 .container-3 {
+    display: grid;
+    grid-template-columns: 
+      [full-start] minmax(3em, 1fr) 
+      [main-start] minmax(0, 40em) [main-end] 
+      minmax(3em, 1fr) [full-end];
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+#demo-five.example-3 .container-3 > * {
+    grid-column: main;
+}    
+
+#demo-five.example-3 .container-3 > figure {
+    grid-column: full;
+}   
+
+#demo-five.example-3 .container-3 > figure img {
+    display: block;
+    max-width: 100%;
+} 
+
 /*@media screen and (min-width: 480px) {
     #demo-one.example-1 .grid-container {
         grid-template-columns:100px 100px 100px
