@@ -1798,10 +1798,6 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     background: #0F1C3F;
 }   
 
-/* #demo-five.example-3 .container-3 > figure div {
-    grid-column: main / full;
-}     */
-
 #demo-five.example-3 .container-3 img {
     display: block;
     max-width: 100%;
@@ -1829,12 +1825,14 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     }
 }    
 
+#demo-five.example-3 .code-3 {
+    display: block;
+}
 
-/*@media screen and (min-width: 480px) {
-    #demo-one.example-1 .grid-container {
-        grid-template-columns:100px 100px 100px
-    }
-}*/
+#demo-five.example-3 .title-3 {
+    display: block;
+}
+
 
 .clip-paths {
     border: 0;

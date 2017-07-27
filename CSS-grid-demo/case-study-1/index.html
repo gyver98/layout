@@ -1041,6 +1041,9 @@
           <h3 class="title-example title-2">
             Allowing certain elements to fill the full viewport width from within a fixed-width container
           </h3>
+          <h3 class="title-example title-3">
+            Allowing certain elements to fill the full viewport width from within a fixed-width container : responsive image caption
+          </h3>
         </div>
       
         <div class="demo-intro">
@@ -1171,6 +1174,65 @@
   } 
 
 
+
+  </code>
+            </pre>
+          </div>
+
+<div id="demo-5-ex-3" class="code-example code-3">
+            <pre rel="css" class="language-css">
+  <code class="language-css">
+    
+  /* Mostly same as the example 2 except responsive image caption */
+
+  .container-3 {
+    display: grid;
+    grid-template-columns: 
+      [full-start] minmax(4em, 1fr) 
+      [main-start] minmax(0, 40em) [main-end] 
+      minmax(4em, 1fr) [full-end];
+  }
+  
+  /* Instructing all child elements of container-3 to occupy the main column */
+
+  .container-3 > * {
+    grid-column: main;
+  } 
+
+  /* Making a class for specific elements we'd like to occupy the full container width */
+
+  .container-3 > .full-image {
+    grid-column: full;
+  } 
+
+  .container-3 img {
+    display: block;
+    max-width: 100%;
+  } 
+
+  .container-3 span {
+    color: #fff;
+    padding: 1em;
+  } 
+
+  @media screen and (min-width: 800px) {
+    /* defining nested grid */
+    .container-3 > .full-image {
+        align-items: end;
+        display: inherit;
+        grid-template-columns: inherit;        
+    }
+    
+    .container-3 > .full-image > div {
+        grid-column: main / full;
+    }
+
+    .container-3 > .full-image > span {
+        order: -1;
+        text-align: right;
+        font-size: .75rem;
+    }
+}    
 
   </code>
             </pre>
