@@ -1783,9 +1783,9 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 #demo-five.example-3 .container-3 {
     display: grid;
     grid-template-columns: 
-      [full-start] minmax(3em, 1fr) 
+      [full-start] minmax(5em, 1fr) 
       [main-start] minmax(0, 40em) [main-end] 
-      minmax(3em, 1fr) [full-end];
+      minmax(5em, 1fr) [full-end];
     background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
@@ -1818,13 +1818,14 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         display: inherit;
         grid-template-columns: inherit;        
     }
-    #demo-five.example-3 .container-3 > .full-image > img {
+    #demo-five.example-3 .container-3 > .full-image > div {
         grid-column: main / full;
     }
 
     #demo-five.example-3 .container-3 > .full-image > span {
         order: -1;
         text-align: right;
+        
     }
 }    
 
