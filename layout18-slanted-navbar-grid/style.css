@@ -4,16 +4,13 @@ body {
 }
 
 header {
-  position: relative;
-  width: 100%;
+
 }
 
 #stripes {
-  width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
   background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
   transform: skewY(-10deg);
   transform-origin: 0;
@@ -32,18 +29,20 @@ header {
 #stripes :nth-child(2) {
   grid-column: 1 / span 3;
   grid-row: 1;
+  align-self: end;
   background: #4c29ff;
 }
 
 #stripes :nth-child(3) {
-  grid-column: 5 / span 2;
-  gird-row: 3;
+  grid-column: 6;
+  grid-row: 4;
+  align-self: end;
   background: #2be7ff;
 }
 
 #stripes :nth-child(4) {
-  grid-column: 4 / span 2;
-  grid-row: 4;
+  grid-column: 5 / span 2;
+  grid-row: 5;
   background: #a1ffc8;
 }
 
