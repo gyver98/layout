@@ -46,6 +46,12 @@ header {
   background: #a1ffc8;
 }
 
+#stripes h1 {
+  color: white;
+  grid-column: 2 / span 2;
+  grid-row: 3;
+}
+
 #intro {
   height: 400px;
   width: 100%;
