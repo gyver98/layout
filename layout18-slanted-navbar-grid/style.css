@@ -59,4 +59,19 @@ header {
   grid-row: 3;
 }
 
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.section-1 article > img {
+  grid-column: 1;
+  width: 100%;
+}
+
+.section-1 article > h1, p {
+  text-align: center;
+}
+
 
