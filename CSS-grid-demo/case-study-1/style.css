@@ -1987,7 +1987,13 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     font-size: 2rem;
 }
 
+#demo-five.example-4 .code-4 {
+    display: block;
+}
 
+#demo-five.example-4 .title-4 {
+    display: block;
+}
 
 
 
