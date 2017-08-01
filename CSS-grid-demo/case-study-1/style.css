@@ -1833,7 +1833,11 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block;
 }
 
+#demo-five .demo-space {
+  margin: 0;
+  padding: 0;
 
+}
 
 #demo-five.example-4 .container-4 {
   display: grid;
@@ -1843,7 +1847,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 #demo-five.example-4 .container-4 .stripes {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 100px);
+  grid-template-rows: repeat(5, 100px);
   background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
   transform: skewY(-10deg);
   transform-origin: 0;
@@ -1891,12 +1895,29 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
   color: white;
   grid-column: 2 / span 3;
   grid-row: 3;
+  font-size: 2rem;
 }
 
 #demo-five.example-4 .container-4 .section-1 {
   display: grid;
   
 }
+
+#demo-five.example-4 .container-4 .section-1 footer > ul {
+    margin: 0;
+    padding: 0;
+    background-color: #005189;
+  }
+
+#demo-five.example-4 .container-4 .section-1 footer > ul > li {
+    list-style: none;
+}
+
+#demo-five.example-4 .container-4 .section-1 footer > ul > li a:link, a:visited {
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+  } 
 
 @media screen and (min-width: 600px) {
   #demo-five.example-4 .container-4 .section-1 {
@@ -1919,25 +1940,31 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     grid-column: 2;
     grid-row: 2;
   }
+
+
   #demo-five.example-4 .container-4 .section-1 footer {
     grid-column: 1 / span 4;
   }
   #demo-five.example-4 .container-4 .section-1 footer > ul {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    background-color: #005189;
+    
   }
   
   #demo-five.example-4 .container-4 .section-1 footer > ul > li {
-    list-style: none;
-    text-decoration: none;
     padding: 20px 0;
   }
 
-  #demo-five.example-4 .container-4 .section-1 footer > ul > li a {
-    padding: 0 15px;
+  
+
+  #demo-five.example-4 .container-4 .section-1 footer > ul > li a:link:hover {
     color: white;
-  }  
+    text-decoration: underline;
+  } 
+
+  #demo-five.example-4 .container-4 .section-1 footer > ul > li:first-child a {
+    border-right: 1px solid #fff;
+  } 
 
   #demo-five.example-4 .container-4 .section-1 footer > ul > li:nth-child(1) {
     grid-column: 1 / 3;
@@ -1954,6 +1981,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 #demo-five.example-4 .container-4 .section-1 article > h1, p {
   text-align: center;
+}
+
+#demo-five.example-4 .container-4 .section-1 article > h1 {
+    font-size: 2rem;
 }
 
 
