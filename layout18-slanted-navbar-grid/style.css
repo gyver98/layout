@@ -67,7 +67,6 @@ header {
 @media screen and (min-width: 600px) {
   .section-1 {
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-    grid-gap: 2em;
   }
   .section-1 article:nth-child(1) {
     grid-column: 2;
@@ -96,9 +95,14 @@ header {
   }
   
   .section-1 footer > ul > li {
-    padding: 2em;
     list-style: none;
+    color: white;
+    padding: 20px 0;
   }
+
+  .section-1 footer > ul > li a {
+    padding: 0 15px;
+  }  
 
   .section-1 footer > ul > li:nth-child(1) {
     grid-column: 1 / 3;
