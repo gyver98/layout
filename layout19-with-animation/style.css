@@ -83,6 +83,10 @@ body {
   padding: 80px 0;
 }
 
+.example-1 #phone {
+  visibility: hidden;
+}
+
 .example-1 article img {
   max-width: 100%;
 }
