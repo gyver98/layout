@@ -27,4 +27,14 @@ body {
   z-index: 999;
   position: fixed;
   top:0;
+  border-width: 10px 0 10px 10px;
+  border-style: solid;
+  border-image: linear-gradient(135deg, #F05A28, #E80A89) 0 1 100%;
+}
+
+.header .logo-title {
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  color: #0a0a0a;
+  line-height: 30px;
 }
