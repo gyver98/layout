@@ -70,3 +70,26 @@ body {
   visibility: hidden;
 }
 
+#intro-arrow {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+}
+
+.example-1 {
+  display: grid;
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.example-1 article img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .example-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+}
