@@ -108,6 +108,32 @@ body {
   max-width: 100%;
 }
 
+.example-3 {
+  display: grid;
+  background-color: #FAFAFA;
+  padding: 130px 0px;
+}
+
+.example-3 article {
+  background: url('img/map.png') no-repeat center;
+  height: 340px;
+  width: 70%;
+  margin: auto;
+  background-size: contain;
+  text-align: center;
+}
+
+.example-3 article img {
+  max-width: 100%;
+}
+
+.example-3 #pin {
+  margin-top: 50px;
+  max-width: 120px;
+  height: auto;
+  visibility: hidden;
+}
+
 @media screen and (min-width: 600px) {
   .example-1 {
     grid-template-columns: 1fr repeat(2, minmax(220px, 25em)) 1fr;
@@ -130,4 +156,13 @@ body {
   .example-2 article:nth-child(2) {
     grid-column: 3 / 4;
   }
+
+  .example-3 {
+    grid-template-columns: 1fr repeat(2, minmax(220px, 25em)) 1fr;
+    grid-gap: 2em;
+  }
+  .example-3 article:nth-child(1) {
+    grid-column: 2 / 4;
+  }
+
 }
