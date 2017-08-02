@@ -30,9 +30,20 @@
     <img src="img/phone.png" alt="" id="phone" class="animate">
   </article>
   <article>
-    <h2>Lorem ipsum dolor sit amet</h2>
-    <p>Vestibulum euismod odio quis pretium hendrerit. Pellentesque fringilla suscipit ipsum ut euismod. Phasellus quis porttitor eros, vitae luctus est. Vivamus ut porta massa</p>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <p>Vestibulum euismod odio quis pretium hendrerit. Pellentesque fringilla suscipit ipsum ut euismod. Phasellus quis porttitor eros, vitae luctus est. Vivamus ut porta massa. Suspendisse id erat placerat, pulvinar nunc at, fringilla risus. Aliquam erat volutpat.</p>
   </article>
+</section>
+
+<section class="example-2">
+  <article>
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <p>Vestibulum euismod odio quis pretium hendrerit. Pellentesque fringilla suscipit ipsum ut euismod. Phasellus quis porttitor eros, vitae luctus est. Vivamus ut porta massa. Suspendisse id erat placerat, pulvinar nunc at, fringilla risus. Aliquam erat volutpat.</p>
+  </article>
+  <article>
+    <img src="img/phone.png" alt="" id="phone2" class="animate">
+  </article>
+  
 </section>
 
 <script>
@@ -42,8 +53,17 @@
 			var imagePos = $(this).offset().top;
 			
 			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+300) {
+				if (imagePos < topOfWindow+400) {
 					$(this).addClass("slideUp");
+				}
+			});
+
+      $('#phone2').each(function(){
+			var imagePos = $(this).offset().top;
+			
+			var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow+650) {
+					$(this).addClass("slideLeft");
 				}
 			});
 
