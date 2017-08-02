@@ -244,10 +244,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 #page-intro .page-title {
     overflow: hidden;
-    text-indent: 120%;
     white-space: nowrap;
-    
-    height: 224px;
     margin: 0 auto 1em;
     width: 224px
 }
