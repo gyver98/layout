@@ -201,10 +201,20 @@ body {
   .example-4 .example-container > img {
     grid-column: 1;
     max-width: 100%;
+    padding: 2rem;
   }  
   .example-4 .example-container > h2, p {
     grid-column: 2;
-  
+    padding: 2rem;
+  } 
+
+  .example-4 .example-container > h2 {
+    font-size: 36px;
+    align-self: center;
+  }  
+
+  .example-4 .example-container > p {
+    padding-top: 0;
   } 
 
 }
