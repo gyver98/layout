@@ -134,6 +134,26 @@ body {
   visibility: hidden;
 }
 
+.example-4 {
+  display: grid;
+  background-color: #f4f4f4;
+  padding: 130px 0px;
+  text-align: center;
+}
+
+.example-4 article {
+  background-color: #61e69d;
+  margin-bottom: 40px;
+  padding: 6%;
+  color: #fff;
+  visibility: hidden;
+  text-align: left;
+}
+
+.example-4 article img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .example-1 {
     grid-template-columns: 1fr repeat(2, minmax(220px, 25em)) 1fr;
@@ -164,5 +184,27 @@ body {
   .example-3 article:nth-child(1) {
     grid-column: 2 / 4;
   }
+
+  .example-4 {
+    grid-template-columns: 1fr repeat(2, minmax(220px, 25em)) 1fr;
+    grid-gap: 2em;
+  }
+  .example-4 article:nth-child(1) {
+    grid-column: 2 / 4;
+  }
+
+  .example-4 .example-container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+  }
+
+  .example-4 .example-container > img {
+    grid-column: 1;
+    max-width: 100%;
+  }  
+  .example-4 .example-container > h2, p {
+    grid-column: 2;
+  
+  } 
 
 }
