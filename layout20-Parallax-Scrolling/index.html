@@ -40,7 +40,14 @@
 <div id="greenPentagon"></div>
 
 <script>
+  var bigYellowCircle = document.querySelector("#bigYellowCircle");
+  var blueSquare = document.querySelector("#blueSquare");
+  var greenPentagon = document.querySelector("#greenPentagon");
 
+  function setTranslate(xPos, yPos, el) {
+    //el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0`;
+  }
 		
 
 </script>
