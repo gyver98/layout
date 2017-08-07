@@ -2133,7 +2133,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     text-align: center;
     padding: 5px 10px;
     border-radius: 2px;
-    display: inline-block;
+    display: block;
     background: #ed4e6e;
     color:#fff;
 }     
