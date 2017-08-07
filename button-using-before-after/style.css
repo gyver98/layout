@@ -1,0 +1,28 @@
+a.button {
+  background-color: #f0f0f0;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  color: #333333;
+  display: block;
+  font-size: 30px;
+  padding: 6px 30px 4px 58px;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+}
+
+a.button::before {
+  background-color: #ff0066;
+  border-radius: 3px;
+  color: #ffffff;
+  content: "NEW";
+  font-family: sans-serif;
+  font-size: 15px;
+  left: 9px;
+  line-height: 15px;
+  margin-top: -10px;
+  padding: 3px 3px 2px 3px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+}
