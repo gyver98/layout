@@ -2087,29 +2087,56 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     padding: 8px 10px 4px;
 }
 
-.gallery li:hover {
-    transform: scale(1.05);
+.gallery li:hover figcaption {
+    opacity: 1;
+    transform: translate(15px, 15px);
 }
 .gallery li > a > img {
     height: auto;
     max-width: 100%;
 }
 
-.gallery li > h3, .user-name {
+.gallery li figcaption {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+    background: #2c3f52;
+    color: #ed4e6e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+
+}
+
+.gallery li figcaption > h3, .user-name {
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     line-height: 1.5;
     font-weight: 400;
     font-size: 1.2rem;
 }
 
-.gallery li > h3 {
-    margin: 4px 0 12px 0;
+.gallery li figcaption > h3 {
+    margin-top: 70px;
     font-weight: bold;
 }
 
-.gallery li > .user-name {
+.gallery li figcaption > .user-name {
     font-size: 0.85em;
-}    
+}   
+
+.gallery li figcaption > a {
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #ed4e6e;
+    color:#fff;
+}     
 
 @media screen and (min-width: 760px) {
     .gallery li {
@@ -2132,7 +2159,8 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         .gallery li {
             float: none;
             margin: 0;
-            width: auto
+            width: auto;
+            position: relative;
         }
     }
 }
