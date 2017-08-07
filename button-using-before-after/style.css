@@ -26,3 +26,26 @@ a.button::before {
   text-align: center;
   top: 50%;
 }
+
+a.button::after {
+  background-color: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 22px;
+  color: #333333;
+  content: "\00bb";
+  display: none;
+  font-size: 30px;
+  height: 28px;
+  line-height: 26px;
+  margin-top: -14px;
+  position: absolute;
+  right: 6px;
+  text-align: center;
+  text-indent: 1px;
+  top: 50%;
+  width: 28px;
+}
+
+a.button:hover:after {
+  display: block;
+}
