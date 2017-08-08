@@ -2085,6 +2085,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     box-shadow: 2px 2px 3px rgba(0,0,0,0.28);
     list-style: none;
     padding: 8px 10px 4px;
+    position: relative;
 }
 
 .gallery li:hover figcaption {
