@@ -2114,6 +2114,9 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 }
 
+.gallery li figcaption > h3 {
+    color: white;
+}
 .gallery li figcaption > h3, .user-name {
     font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
     line-height: 1.5;
@@ -2175,6 +2178,16 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         }
     }
 }
+
+@media screen and (min-width: 960px) {
+    .gallery li:hover figcaption > .item-title {
+        font-size: 1.4rem;
+    }
+
+    .gallery li:hover figcaption > .user-name {
+        font-size: 1rem;
+    }
+}    
 
 #resources .resources-top {
     background-color: #191919;
