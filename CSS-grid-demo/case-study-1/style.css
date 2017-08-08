@@ -2126,9 +2126,9 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     font-weight: bold;
 }
 
-.gallery li figcaption > .user-name {
+/*.gallery li figcaption > .user-name {
     font-size: 0.85em;
-}   
+}   */
 
 .gallery li figcaption > a {
     align-self: start;
@@ -2150,6 +2150,14 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
     .gallery li:nth-child(3n+1) {
         clear: left
+    }
+
+    .gallery li:hover figcaption > .item-title {
+        font-size: 1rem;
+    }
+
+    .gallery li:hover figcaption > .user-name {
+        font-size: .8rem;
     }
 
     @supports (display: grid) {
