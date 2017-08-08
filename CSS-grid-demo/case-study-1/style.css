@@ -1185,42 +1185,42 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 #demo-three.example-1 .container-1 {
     display: grid;
-    grid-template: repeat(6,[row] 1fr) / repeat(6,[col] 1fr);
+    grid-template: repeat(6, 1fr) / repeat(6, 1fr);
     grid-gap: 20px;
 }
 
 #demo-three.example-1 .container-1 .item-1 {
-    grid-column: col 1 / span 4;
-    grid-row: row 1 / span 2;
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
     z-index: 5;
 }
 
 #demo-three.example-1 .container-1 .item-2 {
-    grid-column: col 4 / span 3;
-    grid-row: row 1 / span 5;
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 5;
     z-index: 3;
 }
 
 #demo-three.example-1 .container-1 .item-3 {
-    grid-column: col 1;
-    grid-row: row 2 / span 4;
+    grid-column: 1;
+    grid-row: 2 / span 4;
     z-index: 2;
 }
 
 #demo-three.example-1 .container-1 .item-4 {
-    grid-column: col 3 / span 3;
-    grid-row: row 2 / span 3;
+    grid-column: 3 / span 3;
+    grid-row: 2 / span 3;
     z-index: 4;
 }
 
 #demo-three.example-1 .container-1 .item-5 {
-    grid-column: col 1 / span 2;
-    grid-row: row 5 / span 2
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 2
 }
 
 #demo-three.example-1 .container-1 .item-6 {
-    grid-column: col 2/ span 4;
-    grid-row: row 5 / span 2;
+    grid-column: 2/ span 4;
+    grid-row: 5 / span 2;
 }
 
 #demo-three.example-1 .code-1 {
@@ -1234,7 +1234,7 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 
 #demo-three.example-2 .container-2 {
     display: grid;
-    grid-template: repeat(5,[row] 1fr) / repeat(3,[col] 1fr);
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
     grid-gap: .5rem;
 }
 
@@ -1248,44 +1248,44 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #demo-three.example-2 .container-2 .item-1 {
-    grid-column: col 1;
-    grid-row: row 1;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 #demo-three.example-2 .container-2 .item-2 {
-    grid-column: col 1 / span 2;
-    grid-row: row 2;
+    grid-column: 1 / span 2;
+    grid-row: 2;
 }
 
 #demo-three.example-2 .container-2 .item-3 {
-    grid-column: col 2;
-    grid-row: row 1;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 #demo-three.example-2 .container-2 .item-4 {
-    grid-column: col 3;
-    grid-row: row 2;
+    grid-column: 3;
+    grid-row: 2;
 }
 
 #demo-three.example-2 .container-2 .item-5 {
-    grid-column: col 3;
-    grid-row: row 3;
+    grid-column: 3;
+    grid-row: 3;
 }
 
 #demo-three.example-2 .container-2 .item-6 {
-    grid-column: col 1;
-    grid-row: row 4 / span 2;
+    grid-column: 1;
+    grid-row: 4 / span 2;
 }
 
 #demo-three.example-2 .container-2 .item-7 {
-    grid-column: col 2;
-    grid-row: row 4;
+    grid-column: 2;
+    grid-row: 4;
     z-index: 2;
 }
 
 #demo-three.example-2 .container-2 .item-8 {
-    grid-column: col 3;
-    grid-row: row 5;
+    grid-column: 3;
+    grid-row: 5;
 }
 
 #demo-three.example-2 .code-2 {
