@@ -161,8 +161,20 @@ body {
   text-align: center;
 }
 
+.example-5 article {
+  margin-bottom: 40px;
+  padding: 6%;
+  color: #fff;
+
+}
+
 .example-5 article img {
   max-width: 100%;
+}
+
+.example-5 #pullup-image1, #pullup-image2 {
+
+  visibility: hidden;
 }
 
 @media screen and (min-width: 600px) {
