@@ -107,20 +107,11 @@
 				}
 			});		
 
-			$('#example-4').each(function(){
-			var imagePos = $(this).offset().top;
-			
-			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
-					$('.device-arrow').addClass("stretchRight");
-				}
-			});		
-
 			$('#example-5').each(function(){
 			var imagePos = $(this).offset().top;
 			
 			var topOfWindow = $(window).scrollTop();
-				if (imagePos < topOfWindow+400) {
+				if (imagePos < topOfWindow+700) {
 					$('#pullup-image1').addClass("pullUp");
 					$('#pullup-image2').addClass("pullUp");
 				}
