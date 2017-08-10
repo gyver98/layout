@@ -1,0 +1,68 @@
+body {
+  color: white;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.Header {
+  background: linear-gradient(to bottom, black 0%, transparent 100%);
+  display: flex;
+  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.Logo {
+  width: 151px;
+  height: 41px;
+  margin-right: 10px;
+  transition: margin .125s ease;
+}
+
+.Logo:hover {
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.Hero {
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.Hero .content {
+  position: relative;
+  width: 500px;
+  left: 10vw;
+  top: 10vw;
+  z-index: 4;
+}
+
+.Hero .content .logo {
+  max-width: 400px;
+  display: block;
+  position: relative;
+  left: -5px;
+}
+
+.Hero .content h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.Hero .content p {
+  width: 100%;
+  
+}
