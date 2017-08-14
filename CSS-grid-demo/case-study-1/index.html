@@ -141,19 +141,35 @@
 <div id="demo-1-ex-4" class="code-example code-4">
   <pre rel="css" class="language-css">
     <code class="language-css">
-  /* The default behavior of Grid Auto Flow is to layout the elements by row, 
-     working along the row until there are no more slots then moving on to the next row.
-     This default behavior can be changed by using the grid-auto-flow property.
-     If you specify column then the elements will be laid out column by column. */
-  
-  .grid-container {
+    /* Three columns: 200px each */
+    /* Three rows: 150px each */
+    .grid-container {
       display: grid;
-      grid-template-columns: 1fr 300px 1fr;
-      grid-template-rows: 100px 200px;
-      grid-gap: 20px;
-      grid-auto-flow: column;
-   }
-    </code></pre>
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 150px 150px 150px;
+      grid-template-areas: 
+          "header header header"
+          "sidebar content content"
+          "sidebar content content";
+      grid-gap: 5px;
+    }
+
+    /* You can refer to a grid area using its bounding grid lines or its name 
+    as defined by the grid-template-areas property. 
+    A grid item can then be assigned to a grid area with grid-placement 
+    properties like grid-area, grid-row, grid-column */
+    
+    .item1 {
+      grid-area: header;
+    }
+    .item2 {
+      grid-area: sidebar;
+    }
+    .item3 {
+      grid-area: content;
+    }
+    </code>
+  </pre>
 </div>
 </div>
 
