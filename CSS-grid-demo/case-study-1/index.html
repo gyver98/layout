@@ -42,14 +42,13 @@
         </header>
         <div class="demo-title">
           <h3 class="title-example title-1">
-            Grid Lines : Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of a column or row. They can be referred to by numerical index.
+            Grid Lines : Grid lines are the horizontal and vertical dividing lines of the grid. A grid line exists on either side of a column or row. They can be referred to by numerical index, which starts at 1.
           </h3>
           <h3 class="title-example title-2">
-            Three columns layout : 1 fraction, 2 fractions, 3 fractions 
+            Grid Lines : Grid lines can be referred to by an author-specified name.
           </h3>
           <h3 class="title-example title-3">
-            Three columns : 50%, 100px, and the remaining available fraction,
-            Two rows: 100px and 200px 
+            Grid Tracks and Cells
           </h3>
           <h3 class="title-example title-4">
             Grid auto-flow column
@@ -75,6 +74,9 @@
           <div class="image-container container-2">
             <img src="img/grid-line2.png" alt="">
           </div>
+          <div class="image-container container-3">
+            <img src="img/grid-track.png" alt="">
+          </div>
         </div>
 
 <div id="demo-zero-code" class="demo-code">
@@ -93,7 +95,7 @@
 
     .item {
       grid-column-start: 2;
-      grid-column-end: 3;
+      grid-column-end: 4;
       grid-row-start: 2;
       grid-row-end: 3;
     }
@@ -103,12 +105,23 @@
 <div id="demo-1-ex-2" class="code-example code-2">
   <pre rel="css" class="language-css">
     <code class="language-css">
-  /* Three columns: 1 fraction, 2 fractions, 3 fractions */
-  .grid-container {
+    /* Three columns: 200px each */
+    /* Two rows: 150px each */
+    .grid-container {
       display: grid;
-      grid-template-columns: 1fr 2fr 3fr;
-      grid-gap: 20px;
-  }</code></pre>
+      grid-template-columns: 200px [col-start] 200px 200px [col-end];
+      grid-template-rows: 150px [row-start] 150px [row-end];
+    }
+
+    /* equivalent layout to the prior example, but using named lines */
+    .item {
+      grid-column-start: col-start;
+      grid-column-end: col-end;
+      grid-row-start: row-start;
+      grid-row-end: row-end;
+    }
+    </code>
+  </pre>
 </div>
 <div id="demo-1-ex-3" class="code-example code-3">
   <pre rel="css" class="language-css">

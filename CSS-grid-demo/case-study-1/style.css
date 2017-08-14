@@ -805,16 +805,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
-#demo-zero.example-3 .grid-container {
-    display: grid;
-    grid-template-columns: 50% 100px 1fr;
-    grid-template-rows: 100px 200px;
-    grid-gap: 20px
+#demo-zero.example-3 .container-3 {
+    display: block;
 }
 
-#demo-zero.example-3 .code-3 {
-    display: block
-}
 
 #demo-zero.example-3 .title-3 {
     display: block
