@@ -768,6 +768,75 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     }
 }
 
+#demo-zero h2:before {
+    background-position: center top
+}
+
+#demo-zero.example-1 .grid-container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-gap: 20px
+}
+
+@media screen and (min-width: 480px) {
+    #demo-zero.example-1 .grid-container {
+        grid-template-columns:100px 100px 100px
+    }
+}
+
+#demo-zero.example-1 .code-1 {
+    display: block
+}
+
+#demo-zero.example-1 .title-1 {
+    display: block
+}
+
+#demo-zero.example-2 .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-gap: 20px
+}
+
+#demo-zero.example-2 .code-2 {
+    display: block
+}
+
+#demo-zero.example-2 .title-2 {
+    display: block
+}
+
+#demo-zero.example-3 .grid-container {
+    display: grid;
+    grid-template-columns: 50% 100px 1fr;
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px
+}
+
+#demo-zero.example-3 .code-3 {
+    display: block
+}
+
+#demo-zero.example-3 .title-3 {
+    display: block
+}
+
+#demo-zero.example-4 .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 100px 200px;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+
+#demo-zero.example-4 .code-4 {
+    display: block
+}
+
+#demo-zero.example-4 .title-4 {
+    display: block
+}
+
 #demo-one h2:before {
     background-position: center top
 }
