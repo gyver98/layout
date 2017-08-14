@@ -35,7 +35,7 @@
   </header>
   <section id="demos">
 
-    <article id="demo-zero" class="section demo-section example-0">
+    <article id="demo-zero" class="section demo-section example-1">
       <div class="content grid-content">
         <header>
           <h2>Concepts & Terminology</h2>
@@ -69,36 +69,30 @@
         </ul>
 
         <div class="demo-space">
-          <div class="fallback">
-            <img src="/media/img/mozorg/developer/css-grid/screen-demo1.e5e4f9c9ea67.jpg" alt="" width="800" height="440">
-
-            <p>
-            It looks like your web browser doesn’t support CSS Grid.<br> To see this demo, try viewing this page in <a href="/en-US/firefox/new/">the latest Firefox</a>.
-            </p>
+          <div class="image-container container-1">
+            <img src="img/grid-line.png" alt="">
           </div>
-
-          <!--<div class="grid-container">
-            <div class="item-1">1</div>
-            <div class="item-2">2</div>
-            <div class="item-3">3</div>
-            <div class="item-4">4</div>
-            <div class="item-5">5</div>
-            <div class="item-6">6</div>
-          </div>-->
-          <img src="img/grid-line.png" alt="">
         </div>
 
-<div id="demo-one-code" class="demo-code">
+<div id="demo-zero-code" class="demo-code">
 <h3>CSS</h3>
 
-<div id="demo-1-ex-1" class="code-example code-1">
+<div id="demo-0-ex-1" class="code-example code-1">
   <pre rel="css" class="language-css">
     <code class="language-css">
-    /* Three columns: 100px each */
+    /* Three columns: 200px each */
+    /* Two rows: 150px each */
     .grid-container {
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-gap: 20px;
+      display: grid;
+      grid-template-columns: 200px 200px 200px;
+      grid-template-rows: 150px 150px;
+    }
+
+    .item {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
     }
     </code>
   </pre>
