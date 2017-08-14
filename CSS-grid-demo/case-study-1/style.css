@@ -793,10 +793,8 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     display: block
 }
 
-#demo-zero.example-2 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
-    grid-gap: 20px
+#demo-zero.example-2 .container-2 {
+    display: block;
 }
 
 #demo-zero.example-2 .code-2 {
