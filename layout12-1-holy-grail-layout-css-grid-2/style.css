@@ -45,11 +45,25 @@
 @media screen and (min-width: 600px) {
   .hg {
     grid-template-columns: 
-    [full-start] minmax(3em, 1fr)
-    [main-start] minmax(0, 40em) [main-end]
-    minmax(3em, 1fr) [full-end];
+    [full-start] minmax(.25em, 1fr)
+    [main-start] minmax(0, 50em) [main-end]
+    minmax(.25em, 1fr) [full-end];
     grid-template-rows: 5em 1fr 5em;
     min-height: 100vh;
+  }
+  .hg__main {
+    grid-column: main;
+    grid-row: 2;
+  }
+  .hg__header, .hg__footer {
+    grid-column: full;
+  }
+  .hg__right {
+    grid-column: main-end / full-end;
+    grid-row: 2;
+  }
+  .hg__footer {
+    grid-row: 3;
   }
   
 }
