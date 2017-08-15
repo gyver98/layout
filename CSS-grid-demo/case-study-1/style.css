@@ -435,6 +435,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
     position: relative
 }
 
+.demo-section p {
+    text-align: left;
+}
+
 .demo-section h2:before {
     background-image: url("/media/img/mozorg/developer/css-grid/icon-sprite.6d323eb6dc88.png");
     -webkit-background-size: 65px 382px;
@@ -715,6 +719,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
         padding: 0
     }
 
+    .demo-section .demo-intro p {
+        text-align: left;
+    }    
+
     .demo-section .demo-space {
         grid-area: demo;
         margin: 0 -20px
@@ -823,6 +831,18 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
 }
 
 #demo-zero.example-4 .title-4 {
+    display: block
+}
+
+#demo-zero.example-5 .container-5 {
+    display: block
+}
+
+#demo-zero.example-5 .code-5 {
+    display: block
+}
+
+#demo-zero.example-5 .title-5 {
     display: block
 }
 
@@ -1918,7 +1938,10 @@ a:link:active,a:link:focus,a:link:hover,a:visited:active,a:visited:focus,a:visit
   max-width: 100%;
   height: 100%;
 }
-#demo-five.example-4 .container-4 .section-1 article > h1, p {
+#demo-five.example-4 .container-4 .section-1 article > h1 {
+  text-align: center;
+}
+#demo-five.example-4 .container-4 .section-1 article > p {
   text-align: center;
 }
 
