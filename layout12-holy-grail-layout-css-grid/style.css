@@ -9,22 +9,19 @@
   writing-mode: horizontal-tb;
   font-size: 1rem;
   font-weight: 600;
-  text-align: center;
   padding-top: 40px;
 }
-
 .hg__main {
   grid-area: content;
 }
 
 .hg__left {
   grid-area: menu;
-  background: #CFD7D7;
-  font-size: 1rem;
 }
-
 .hg__right {
   grid-area: ads;
+}
+.hg__left, .hg__right {
   background: #CFD7D7;
   font-size: 1rem;
 }
@@ -36,18 +33,7 @@
 }
 
 .hg {
-  display: grid;
-  grid-template-areas: 
-    "header header header"
-    "menu content ads"
-    "footer footer footer"; 
-  grid-template-columns: 150px 1fr 150px;
-  grid-template-rows: 100px 1fr 30px;
-  min-height: 100vh;
-}
-
-@media screen and (max-width: 600px) {
-  .hg {
+    display: grid;
     grid-template-areas: 
       "header"
       "menu"
@@ -55,6 +41,20 @@
       "ads"
       "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 100px 50px 1fr 50px 30px;
+    grid-template-rows: 100px 50px 1fr 50px 50px;
+    min-height: 100vh;
   }
+
+@media screen and (min-width: 600px) {
+  .hg {
+    
+    grid-template-areas: 
+      "header header header"
+      "menu content ads"
+      "footer footer footer"; 
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 100px 1fr 50px;
+    min-height: 100vh;
+  }
+  
 }
