@@ -30,22 +30,26 @@ html {
 @media screen and (min-width: 600px) {
   .grid-container {
     grid-template-columns: 
-    [full-start] minmax(15px, 30px)
-    [main-start] minmax(0, 50em) [main-end]
-    minmax(15px, 30px) [full-end];
-    grid-template-rows: 5em 1fr 5em;
+    5em 1fr 5em;
+    grid-template-rows: 10% 1fr 20%;
+    grid-template-areas:
+      "header header header"
+      "..... main ....."
+      "footer footer footer";
+    min-height: 100vh;
+    grid-gap: 5px;
+
   }
 
   .grid-main {
-    grid-column: main;
-    grid-row: 2;
+    grid-area: main;
   }
   .grid-header {
-    grid-column: full;
+    grid-area: header;
   }
   
   .grid-footer {
-    grid-row: 3;
+    grid-area: footer;
   }
   
 }
