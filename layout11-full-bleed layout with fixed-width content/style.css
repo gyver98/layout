@@ -4,9 +4,41 @@
   padding: 0;
 }
 
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Helvetica', Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+}
+
+p {
+	margin: 0;
+	padding: 1em 0;
+}
+
 img {
 	display: block;
 	border: 0;
 	width: 100%;
 	height: auto;
+}
+
+.logo, .site-title {
+  text-align: center;
+}
+
+.logo {
+  font-size: 8em;
 }
