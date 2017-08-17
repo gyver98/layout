@@ -11,8 +11,8 @@ html {
 
 body {
   color: #404040;
-  font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 18px;
+  font-family: Didot,'Theano Didot',Georgia,X-LocaleSpecific,serif;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -20,22 +20,70 @@ body {
   background: #1c1b1b;
 }
 
+.logo {
+  height: 18px;
+}
 
+.menu-navigation {
+  padding-top: 40px;
+}
+
+.menu-navigation .grid-container {
+  list-style-type: none;
+}
+
+.menu-navigation .grid-container li {
+  color: #fff;
+}  
+
+.intro .header-contents {
+  padding-top: 95px;
+  color: #fff;
+}
 
 @media screen and (min-width: 700px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-rows: 1fr 375px;
   }
 
-  .menu, .header-contents {
+  .menu-navigation, .header-contents {
     grid-column: 2/4;
   }
 
-  .menu-logo {
-    display: flex;
-    align-items: center;
-    min-height: 120px;
-    padding-top: 40px;
+  .menu-navigation .grid-container {
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 100px);
+    
   }
+  .grid-container li:nth-child(2) {
+    grid-row: 2;
+    font-size: 12px;
+    font-weight: 400;
+    padding-top: 10px;
+  }
+
+  .grid-container li:nth-child(3), li:nth-child(4), li:nth-child(5) {
+    justify-self: end;
+  }
+  /*.grid-container li:not(:nth-child(1)) {
+    justify-self: end;
+  }*/
+
+  .intro .header-contents h1 {
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 20px;
+  } 
+ 
+
+  .intro .header-contents p {
+    font-size: 18px;
+    line-height: 2;
+  } 
+
+
+
+
 }
