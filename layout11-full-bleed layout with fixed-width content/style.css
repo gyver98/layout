@@ -73,13 +73,17 @@ img {
 	padding: 1.5em;
 }
 
+.another {
+	padding: 2em;
+}
+
 @media screen and (min-width: 600px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 	}
 
-	.splash-content, .cards ul {
+	.splash-content, .cards ul, .another-content {
 		grid-column: 2/4;
 	}
 
@@ -100,4 +104,6 @@ img {
 	.cards li {
 		width: 31%;
 	}
+
+
 }
