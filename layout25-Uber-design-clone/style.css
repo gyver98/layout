@@ -46,6 +46,11 @@ html {
   }
   .grid-header {
     grid-area: header;
+    background: black;
+    grid-column: 2;
+  }
+  .grid-header .logo {
+    height: 100%;
   }
   
   .grid-footer {
