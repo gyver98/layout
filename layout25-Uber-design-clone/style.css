@@ -9,52 +9,33 @@ html {
   background: #f8f8f9;
 }
 
-.grid-container {
+body {
+  color: #404040;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.intro {
+  background: #1c1b1b;
+}
+
+
+
+@media screen and (min-width: 700px) {
+  .grid {
     display: grid;
-    grid-template-columns: 100%;
-    grid-gap: .25em;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
-.grid-header {
-
-}
-.grid-main {
-
-}
-
-.grid-footer {
-
-}
-
-
-@media screen and (min-width: 600px) {
-  .grid-container {
-    grid-template-columns: 
-    5em 1fr 5em;
-    grid-template-rows: 10% 1fr 20%;
-    grid-template-areas:
-      "header header header"
-      "..... main ....."
-      "footer footer footer";
-    min-height: 100vh;
-    grid-gap: 5px;
-
+  .menu, .header-contents {
+    grid-column: 2/4;
   }
 
-  .grid-main {
-    grid-area: main;
+  .menu-logo {
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    padding-top: 40px;
   }
-  .grid-header {
-    grid-area: header;
-    background: black;
-    grid-column: 2;
-  }
-  .grid-header .logo {
-    height: 100%;
-  }
-  
-  .grid-footer {
-    grid-area: footer;
-  }
-  
 }
