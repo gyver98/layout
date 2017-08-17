@@ -49,13 +49,37 @@ img {
 	margin-bottom: 3em;
 }
 
+.splash-content {
+	padding: 1.5em;
+}
+
+.cards {
+	padding: 2em 1em 1em;
+	background: #3E454C;
+}
+
+.cards ul {
+	margin: 0;
+	padding: 0;
+}
+
+.cards li {
+	margin-bottom: 1em;
+	background: #fff;
+	list-style-type: none;
+}
+
+.card {
+	padding: 1.5em;
+}
+
 @media screen and (min-width: 600px) {
 	.grid {
 		display: grid;
 		grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 	}
 
-	.splash-content {
+	.splash-content, .cards ul {
 		grid-column: 2/4;
 	}
 
@@ -66,5 +90,14 @@ img {
 
 	.splash-text p {
 		padding-top: 0;
+	}
+
+	.cards ul {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.cards li {
+		width: 31%;
 	}
 }
