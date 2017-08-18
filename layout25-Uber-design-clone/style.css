@@ -70,6 +70,8 @@ body {
 
   .menu-navigation, .header-contents {
     grid-column: 2/6;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .menu-navigation .grid-container {
@@ -117,13 +119,12 @@ body {
 
   .cards-background {
     grid-column: 1/2;
-    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
+    background: #fff;
   }
   .cards ul {
     grid-column: 2/6;
     padding-top: 80px;
-    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
-    background: gray;
+    background: #fff;
     padding-left: 60px;
     padding-right: 60px;
   }
