@@ -105,19 +105,24 @@ body {
 
   /* card list section style */
 
-  /* .cards {
-    grid-column: 2/6;
-    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
-  } */
+  .cards::after {
+    content:"";
+    display: block;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 270px;
+    background: #1c1b1b;
+  }
 
   .cards-background {
     grid-column: 1/2;
-    background: gray;
+    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
   }
   .cards ul {
     grid-column: 2/6;
     padding-top: 80px;
-    /* background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9); */
+    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
     background: gray;
     padding-left: 60px;
     padding-right: 60px;
