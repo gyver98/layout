@@ -59,8 +59,7 @@ body {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr repeat(2, minmax(auto, 35em)) 1fr 1fr;
-    padding-left: 60px;
-    padding-right: 60px;
+    
   }
 
   /* intro section style */
@@ -114,6 +113,8 @@ body {
     grid-column: 2/6;
     padding-top: 80px;
     background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .cards ul {
