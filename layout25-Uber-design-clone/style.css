@@ -106,13 +106,14 @@ body {
 
   /* card list section style */
 
-  .cards {
+  /* .cards {
     grid-column: 2/6;
     background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
-  }
+  } */
   .cards ul {
     grid-column: 2/6;
     padding-top: 80px;
+    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
   }
 
   .cards ul {
