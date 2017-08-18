@@ -109,10 +109,16 @@ body {
     grid-column: 2/6;
     background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
   } */
+
+  .cards-background {
+    grid-column: 1/2;
+    background: gray;
+  }
   .cards ul {
     grid-column: 2/6;
     padding-top: 80px;
-    background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
+    /* background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9); */
+    background: gray;
     padding-left: 60px;
     padding-right: 60px;
   }
