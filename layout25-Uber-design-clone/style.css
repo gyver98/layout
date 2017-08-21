@@ -283,4 +283,21 @@ body {
     border-color: transparent;
   }
 
+  .footer-grid {
+
+  }
+
+  .footer .footer-left {
+    grid-column: 1/4;
+    height: 500px;
+    background: black;
+    z-index: 2;
+    width: 110%;
+  }
+
+  .footer .footer-right {
+    grid-column: 4/7;
+    height: 500px;
+  }
+
 }
