@@ -186,6 +186,11 @@ body {
     height: 100%;
     border-radius: 50%;
   }
+
+  .cards .load-more {
+    grid-column: 3 / 5;
+    justify-content: center;
+  }
   
   
 
