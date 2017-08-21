@@ -241,10 +241,12 @@ body {
     padding-bottom: 136px;
     width: 50%;
     margin-left: 25%;
+
   }
 
   .roles .roles-wrapper h2 {
     margin-bottom: 40px;
+    font-family: ff-clan-web-pro,arial;
   }
   
   .roles .roles-wrapper p {
@@ -273,11 +275,12 @@ body {
     border: 1px solid #e6e6e6;
     border-radius: 1px;
     background: transparent;
-    font-family: inherit;
+    font-family: ff-clan-web-pro,arial;
   }
 
   .roles .roles-wrapper .link-wrapper .link-right {
-
+    margin-left: 0;
+    border-color: transparent;
   }
 
 }
