@@ -93,6 +93,21 @@ body {
   color: #1c1b1b;
 }  
 
+.roles .roles-wrapper h2 {
+  font-size: 12px;
+  color: #1c1b1b;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.roles .roles-wrapper p {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: -.05em;
+  margin: 0 0 30px;
+}
+
 
 @media screen and (min-width: 700px) {
   .grid {
@@ -227,8 +242,42 @@ body {
     width: 50%;
     margin-left: 25%;
   }
-  
-  
 
+  .roles .roles-wrapper h2 {
+    margin-bottom: 40px;
+  }
+  
+  .roles .roles-wrapper p {
+    font-size: 24px;
+    margin-bottom: 65px;
+  }
+
+  .roles .roles-wrapper .link-wrapper {
+
+  }
+
+  .roles .roles-wrapper .link-wrapper .roles-link {
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    height: 48px;
+    min-width: 190px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 46px;
+    text-align: center;
+    text-decoration: none;
+    color: #1c1b1b;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    background: transparent;
+    font-family: inherit;
+  }
+
+  .roles .roles-wrapper .link-wrapper .link-right {
+
+  }
 
 }
