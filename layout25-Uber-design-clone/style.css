@@ -188,6 +188,12 @@ body {
     border-radius: 50%;
   }
 
+  .cards .load-more-background {
+    grid-column: 1;
+    grid-row: 4;
+    background: #fff;
+  }
+
   .cards .load-more {
     grid-column: 2 / 6;
     grid-row: 4;
@@ -206,6 +212,8 @@ body {
     border-radius: 1px;
     margin-top: 30px;
     margin-bottom: 30px;
+    background: transparent;
+    text-transform: uppercase;
   }
 
   .roles .roles-background {
@@ -213,10 +221,11 @@ body {
   }
 
   .roles .roles-wrapper {
-    grid-column: 2/6;
-    padding-top: 80px;
-    padding-left: 60px;
-    padding-right: 60px; 
+    grid-column: 3/5;
+    padding-top: 136px;
+    padding-bottom: 136px;
+    width: 50%;
+    margin-left: 25%;
   }
   
   
