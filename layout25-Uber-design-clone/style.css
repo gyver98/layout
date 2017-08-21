@@ -189,11 +189,11 @@ body {
   }
 
   .cards .load-more {
-    grid-column: 3 / 5;
+    grid-column: 2 / 6;
     grid-row: 4;
-    margin-top: 30px;
-    margin-bottom: 30px;
+
     text-align: center;
+    background: #fff;
   }
 
   .cards .load-more .btn-more {
@@ -204,18 +204,17 @@ body {
     line-height: 46px;
     border: 1px solid #e6e6e6;
     border-radius: 1px;
-
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   .roles .roles-background {
     grid-column: 1/2;
-    background: #fff;
   }
 
   .roles .roles-wrapper {
     grid-column: 2/6;
     padding-top: 80px;
-    background: #fff;
     padding-left: 60px;
     padding-right: 60px; 
   }
