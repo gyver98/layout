@@ -178,6 +178,7 @@ body {
   .cards ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr), 200px;
     grid-gap: 2em;
   }
 
@@ -189,7 +190,34 @@ body {
 
   .cards .load-more {
     grid-column: 3 / 5;
-    justify-content: center;
+    grid-row: 4;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .cards .load-more .btn-more {
+
+    min-width: 190px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 46px;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+
+  }
+
+  .roles .roles-background {
+    grid-column: 1/2;
+    background: #fff;
+  }
+
+  .roles .roles-wrapper {
+    grid-column: 2/6;
+    padding-top: 80px;
+    background: #fff;
+    padding-left: 60px;
+    padding-right: 60px; 
   }
   
   
