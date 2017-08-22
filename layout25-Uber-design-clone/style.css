@@ -112,6 +112,30 @@ body {
   background: #1c1b1b;
 }
 
+.footer .footer-wrapper {
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1410px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative;
+  padding-top: 116px;
+  padding-bottom: 135px;
+}
+
+.footer .footer-wrapper .footer-left {
+  display: block;
+  flex: none;
+  align-items: flex-start;
+  align-self: stretch;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%
+}
+
 .footer .footer-wrapper .footer-left .left-wrapper .left-form {
   display: flex;
   align-items: center;
