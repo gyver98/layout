@@ -133,14 +133,17 @@ body {
   align-self: stretch;
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%
+  width: 100%;
+  color: #fff;
 }
 
-.footer .footer-wrapper .footer-left .left-wrapper .left-form {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 350px;
+.footer .footer-wrapper .footer-left .left-wrapper {
+  background: #1c1b1b;
+}
+
+.footer .footer-wrapper .footer-left .left-wrapper .logo {
+  margin-bottom: 115px;
+  width: 85px;
 }
 
 .footer .footer-wrapper .footer-left .left-wrapper p {
