@@ -108,6 +108,10 @@ body {
   margin: 0 0 30px;
 }
 
+.footer {
+  background: #1c1b1b;
+}
+
 .footer .footer-wrapper .footer-left .left-wrapper .left-form {
   display: flex;
   align-items: center;
@@ -121,6 +125,7 @@ body {
   font-size: 20px;
   line-height: 1.6;
 }
+
 
 
 @media screen and (min-width: 700px) {
@@ -297,6 +302,16 @@ body {
     border-color: transparent;
   }
 
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr repeat(2, minmax(auto, 35em)) 1fr 1fr;
+  }
+  
   .footer {
     background: linear-gradient(90deg,#1c1b1b 0,#1c1b1b 50%,transparent 0,transparent);
     grid-column: 1/7;
@@ -340,7 +355,4 @@ body {
   .footer .footer-wrapper .footer-left .left-wrapper .left-form {
     width: 82%;
   }  
-
-  
-
-}
+}  
