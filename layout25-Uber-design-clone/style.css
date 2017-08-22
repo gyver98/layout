@@ -153,6 +153,10 @@ body {
   line-height: 1.6;
 }
 
+.footer .footer-wrapper .footer-left .left-wrapper .empty-space {
+  height: 60px;
+}
+
 .footer .footer-wrapper .footer-left .left-wrapper .left-form {
   display: flex;
   align-items: center;
@@ -192,7 +196,67 @@ body {
   left: 0;
   width: 10px;
   height: 10px;
+} 
+
+.footer .footer-wrapper .footer-right {
+  display: block;
+  flex: none;
+  align-items: flex-start;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+
+.footer .footer-wrapper .right-wrapper {
+  display: flex;
+  flex: 0 1 100%;
+  align-self: flex-end;
+  align-items: stretch;
+  margin-bottom: 115px;
 }  
+
+.footer .footer-wrapper .right-wrapper .link-wrapper {
+  margin-bottom: 20px;
+}  
+
+.footer .footer-wrapper .right-wrapper .link-wrapper a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}  
+
+.footer .footer-wrapper .right-wrapper .link-wrapper a > .svg-icon {
+  width: 27px;
+  height: 27px;
+  fill: hsla(0,0%,100%,.75);
+} 
+
+.footer .footer-wrapper .right-wrapper nav .nav-link {
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  background: transparent;
+  margin: 0 16px;
+  font-size: 14px;
+  color: #494949;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer .footer-wrapper .right-wrapper nav .nav-link:first-child {
+  margin-left: 0;
+}
+
+.footer .footer-wrapper .right-wrapper nav .nav-link:last-child {
+  margin-right: 0;
+}  
+
+
+
+
+
 
 @media screen and (min-width: 700px) {
   .grid {
