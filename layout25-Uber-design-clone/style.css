@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
-  max-width: 1330px;
+
 }
 
 .logo {
@@ -59,7 +59,6 @@ body {
 }*/
 .cards ul {
   list-style-type: none;
-  margin: 0 auto;
   padding: 40px 40px 20px;
 }
 
@@ -99,13 +98,14 @@ body {
   margin-bottom: 0;
   line-height: 1.2;
   color: #1c1b1b;
-}
+}  
 
 .cards .load-more {
   margin-top: -15px;
   margin-bottom: 30px;
   text-align: center;
 }  
+
 
 .cards .load-more button {
   height: 48px;
@@ -402,6 +402,7 @@ body {
     grid-column: 1;
     grid-row: 4;
     background: #fff;
+    margin-bottom: 0;
   }
 
   .cards .load-more {
@@ -410,6 +411,7 @@ body {
 
     text-align: center;
     background: #fff;
+    margin-bottom: 0;
   }
 
   .cards .load-more .btn-more {
