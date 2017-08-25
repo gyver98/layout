@@ -54,9 +54,11 @@ body {
   height: 250px;
 }
 
-/*.cards {
-  background: linear-gradient(90deg,#fff 0,#fff 50%,#f8f8f9 0,#f8f8f9);
-}*/
+.cards {
+  background: #fff;
+}
+
+
 .cards ul {
   list-style-type: none;
   padding: 40px 40px 20px;
@@ -118,6 +120,12 @@ body {
   border-radius: 1px;
   background: transparent;
   text-transform: uppercase;
+}
+
+.roles .roles-wrapper {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .roles .roles-wrapper h2 {
@@ -363,6 +371,9 @@ body {
 
   /* card list section style */
 
+  .cards {
+    background: none;
+  }
   .cards::after {
     content:"";
     display: block;
