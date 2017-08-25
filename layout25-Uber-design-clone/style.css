@@ -59,6 +59,8 @@ body {
 }*/
 .cards ul {
   list-style-type: none;
+  margin: 0 auto;
+  padding: 40px 40px 20px;
 }
 
 .card .card-contents {
