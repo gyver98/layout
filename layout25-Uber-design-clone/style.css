@@ -99,7 +99,26 @@ body {
   margin-bottom: 0;
   line-height: 1.2;
   color: #1c1b1b;
+}
+
+.cards .load-more {
+  margin-top: -15px;
+  margin-bottom: 30px;
+  text-align: center;
 }  
+
+.cards .load-more button {
+  height: 48px;
+  min-width: 190px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 46px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 1px;
+  background: transparent;
+  text-transform: uppercase;
+}
 
 .roles .roles-wrapper h2 {
   font-size: 12px;
