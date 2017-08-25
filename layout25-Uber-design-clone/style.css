@@ -25,6 +25,10 @@ body {
 
 .intro {
   background: #1c1b1b;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1330px;
 }
 
 .logo {
@@ -33,10 +37,7 @@ body {
 
 .menu-navigation {
   padding-top: 40px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 1330px;
+  
 }
 
 .menu-navigation .grid-container {
@@ -50,6 +51,7 @@ body {
 .intro .header-contents {
   padding-top: 95px;
   color: #fff;
+  height: 250px;
 }
 
 /*.cards {
