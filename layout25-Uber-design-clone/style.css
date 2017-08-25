@@ -402,7 +402,7 @@ body {
     grid-column: 1;
     grid-row: 4;
     background: #fff;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 
   .cards .load-more {
@@ -411,7 +411,7 @@ body {
 
     text-align: center;
     background: #fff;
-    margin-bottom: 0;
+
   }
 
   .cards .load-more .btn-more {
