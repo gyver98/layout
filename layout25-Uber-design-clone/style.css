@@ -445,14 +445,17 @@ body {
     text-transform: uppercase;
   }
 
+  .roles {
+    padding-top: 136px;
+    padding-bottom: 136px;
+  }
+
   .roles .roles-background {
     grid-column: 1/2;
   }
 
   .roles .roles-wrapper {
     grid-column: 3/5;
-    padding-top: 136px;
-    padding-bottom: 136px;
     width: 60%;
     margin-left: 20%;
 
