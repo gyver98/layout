@@ -169,6 +169,11 @@ body {
   font-family: ff-clan-web-pro,arial;
 }
 
+.roles .roles-wrapper .link-wrapper .link-right {
+  margin-left: 0;
+  border-color: transparent;
+}
+
 .footer {
   background: #1c1b1b;
 }
@@ -336,7 +341,11 @@ body {
 
 
 
-
+@media screen and (max-width: 480px) {
+  .roles .roles-wrapper .link-wrapper .roles-link {
+    width: 100%;
+  }  
+}  
 
 @media screen and (min-width: 700px) {
   .grid {
@@ -500,6 +509,7 @@ body {
     justify-content: center;
     position: relative;
     height: 48px;
+    
     min-width: 190px;
     font-size: 12px;
     font-weight: 600;
@@ -515,10 +525,7 @@ body {
     font-family: ff-clan-web-pro,arial;
   } */
 
-  .roles .roles-wrapper .link-wrapper .link-right {
-    margin-left: 0;
-    border-color: transparent;
-  }
+ 
 
   .footer .footer-wrapper .footer-left {
     margin-left: 8.3%;
