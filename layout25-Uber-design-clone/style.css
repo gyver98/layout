@@ -123,6 +123,11 @@ body {
   text-transform: uppercase;
 }
 
+.roles {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
 .roles .roles-wrapper {
   margin: 0 auto;
   padding-left: 40px;
