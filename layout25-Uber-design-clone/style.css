@@ -347,7 +347,7 @@ body {
   }  
 }  
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr repeat(2, minmax(auto, 35em)) 1fr 1fr;
@@ -358,6 +358,8 @@ body {
 
   .intro {
     grid-template-rows: 1fr 375px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .menu-navigation, .header-contents {
