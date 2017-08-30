@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 40px;
+  background: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background: #eee;
+  padding: 40px 0;
+}
+
+.left-menu {
+  background: #ddd;
+}
+
+.left-menu, .right-menu {
+  flex: 0 0 100px;
+}
+
+.main-content {
+  flex: 0 0 400px;
+  margin: 0 20px;
+}
+
+.day-card, .menu-card {
+  height: 130px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.menu-card {
+  height: 80px;
+}
