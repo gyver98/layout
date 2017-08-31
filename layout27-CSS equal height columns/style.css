@@ -1,0 +1,30 @@
+.main .container {
+  padding-right: 330px;
+  overflow: hidden;
+}
+
+.content {
+  float: left;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid;
+}
+
+.sidebar {
+  float: right;
+  margin-right: -330px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid;
+}
+
+.content,
+.sidebar {
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+}
+
+section,
+aside {
+  padding: 30px
+}
