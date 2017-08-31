@@ -28,3 +28,26 @@ section,
 aside {
   padding: 30px
 }
+
+@media all and (max-width: 840px) { 
+  .main .container {
+      padding: 0 30px;
+      overflow: visible;
+  }
+  .content {
+      float: none
+  }
+  .sidebar {
+      float: none;
+      margin-right: 0;
+      width: 100%;
+  }
+  .content,ß
+  .sidebar {
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+  .content {
+      margin-bottom: 30px
+  }
+}
