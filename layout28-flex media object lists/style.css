@@ -25,9 +25,32 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Solution : https://stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
+
+Safari misplaces the elements.
+This happens because Safari treats :before and :after pseudo-elements as if they were real elements. E.g. think about a container with 7 items. If container has :before and :after Safari will position the items like this:
+
+[:before ] [1st-item] [2nd-item]
+
+[3rd-item] [4th-item] [5th-item]
+
+[6th-item] [7th-item] [:after  ]
+Solution
+
+As an alternative to the accepted answer I remove :before & :after from flex containers instead of altering the HTML. In your case:
+
+.flexthis.container:before,
+.flexthis.container:after,
+.flexthis.row:before,
+.flexthis.row:after {
+   content: normal; // IE doesn't support `initial`
+} */
+
+
 .list::before, .list::after {
   content: normal;
-  
+    
   /* or you can set as flex 
   content: '';
   display: flex; 
