@@ -47,3 +47,15 @@
   padding: 20px;
   text-align: center;
 }
+
+@media screen and (min-width: 786px) {
+  .holy-grail {
+    grid-template-columns: 4% minmax(10%, 150px) 1fr minmax(10%, 150px) 4%;
+    grid-template-rows: minmax(100px, auto) 1fr minmax(60px, auto);
+    grid-template-areas:
+      'header header header header header'
+      '... navigation main aside ...'
+      'footer footer footer footer footer';
+    
+  }
+}
