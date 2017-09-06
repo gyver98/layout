@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.holy-grail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 60px 1fr 100px 90px;
+  grid-template-areas: 
+    'header'
+    'navigation'
+    'main'
+    'aside'
+    'footer';
+  grid-gap: 1px;
+  height: 100vh;
+}
+
+.grail-header {
+  grid-area: header;
+  background-color: #8EC5FC;
+}
+
+.grail-main {
+  grid-area: main;
+  background-color: #e4e4e4;
+}
+
+.grail-nav {
+  grid-area: navigation;
+  background-color: #9FACE6;
+}
+
+.grail-aside {
+  grid-area: aside;
+  background-color: #DDD6F3;
+}
+
+.grail-footer {
+  grid-area: footer;
+  background-color: #FA709A;
+}
+
+.grid-section {
+  padding: 20px;
+  text-align: center;
+}
