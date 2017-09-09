@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;  /* Center horizontally at large size */
+  max-width: 64em; /* Limit maximum width */
+  padding: 0.75em; /* Add half-gutter whitespace which will combine with child elements */
+}
+
+
+
