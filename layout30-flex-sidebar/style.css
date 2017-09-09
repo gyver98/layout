@@ -21,6 +21,12 @@ a {
   padding: 0.75em; /* Add half-gutter whitespace which will combine with child elements */
 }
 
+.container::after {
+  clear: both;
+  content: " ";
+  display: table;
+}
+
 /* Give content areas half the gutter space padding, which combines with the 
 container margin to form the full gutter widths. */
 .content,
@@ -79,4 +85,28 @@ container margin to form the full gutter widths. */
   text-decoration: none;
 }
 
+/* At slightly wider sizes, show sidebar boxes side-by-side */
+
+@media (min-width: 34em) and (max-width: 49.9375em) {
+  .sidebar {
+    flex-direction: row;
+  }
+
+  .box {
+    flex: 50%;
+  }
+}
+
+/* at even wider sizes, float the elements so the sidebar content will rise to the top */
+
+@media (min-width: 50em) {
+  .content {
+    float: left;
+    width: 66.666%;
+  }
+  .sidebar {
+    float: right;
+    width: 33.333%;
+  }
+}
 
