@@ -28,6 +28,22 @@ container margin to form the full gutter widths. */
 
 .box {
   margin: 0.75em;
+  background: #dbe5ea;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.box-header {
+  background: #0f1c3f;
+  color: #fff;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: 1em;
+}
+
+.box-menu {
+  list-style: none;
+  padding: 0;
 }
 
 
