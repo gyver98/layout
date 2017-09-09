@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: #456bd9;
+}
+
 .container {
   margin: 0 auto;  /* Center horizontally at large size */
   max-width: 64em; /* Limit maximum width */
@@ -9,6 +26,10 @@ container margin to form the full gutter widths. */
 .content,
 .sidebar {
   padding: 0.75em;
+}
+
+.content * + * {
+  margin-top: 1rem;
 }
 
 /* 
@@ -44,6 +65,18 @@ container margin to form the full gutter widths. */
 .box-menu {
   list-style: none;
   padding: 0;
+}
+
+.box-menu > * + * {
+  border-top: 2px solid transparent;
+}
+
+.box-menu a {
+  background-color: rgba(255,255,255,0.5);
+  display: block;
+  line-height: 1;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 
