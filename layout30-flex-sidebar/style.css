@@ -4,5 +4,30 @@
   padding: 0.75em; /* Add half-gutter whitespace which will combine with child elements */
 }
 
+/* Give content areas half the gutter space padding, which combines with the 
+container margin to form the full gutter widths. */
+.content,
+.sidebar {
+  padding: 0.75em;
+}
+
+/* 
+1. Use flexbox so we can easily change the layout in later with media queries.
+2. Display in a column by default
+3. Counteract the parent margin so the sidebar elements can benefit from ths same additive margin
+*/
+
+.sidebar {
+  display: flex; /* 1 */
+  flex-direction: column; /* 2 */
+  margin: -0.75em; /* 3 */
+  position: relative; /* 3 */
+}
+
+/* Combines with sidebar whitespace to form full gutter width */
+
+.box {
+  margin: 0.75em;
+}
 
 
