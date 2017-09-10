@@ -41,10 +41,7 @@ a {
 }
 
 
-/* Combines with sidebar whitespace to form full gutter width */
-
 .box {
-  margin: 0.75em;
   background: #dbe5ea;
   border-radius: 0.5em;
   overflow: hidden;
