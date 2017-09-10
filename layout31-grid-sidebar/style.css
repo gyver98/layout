@@ -76,11 +76,7 @@ a {
 
 @media (min-width: 34em) and (max-width: 49.9375em) {
   .sidebar {
-    flex-direction: row;
-  }
-
-  .box {
-    flex: 50%;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
