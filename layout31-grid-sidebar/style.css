@@ -15,41 +15,31 @@ a {
   color: #456bd9;
 }
 
+/* 
+1. Use grid
+2. Gutter space
+3. Center at large sizes
+4. Set maximum width
+*/
+
 .container {
-  margin: 0 auto;  /* Center horizontally at large size */
-  max-width: 64em; /* Limit maximum width */
-  padding: 0.75em; /* Add half-gutter whitespace which will combine with child elements */
+  display: grid; /* 1 */
+  grid-gap: 1.5em; /* 2 */
+  margin: 1.5em auto;  /* 2, 3 */
+  max-width: 64em; /* 4 */
+  padding: 0 1.5em; /* 2 */
 }
 
-.container::after {
-  clear: both;
-  content: " ";
-  display: table;
-}
-
-/* Give content areas half the gutter space padding, which combines with the 
-container margin to form the full gutter widths. */
-.content,
 .sidebar {
-  padding: 0.75em;
+  display: inherit;
+  grid-gap: inherit;
 }
+
 
 .content * + * {
   margin-top: 1rem;
 }
 
-/* 
-1. Use flexbox so we can easily change the layout in later with media queries.
-2. Display in a column by default
-3. Counteract the parent margin so the sidebar elements can benefit from ths same additive margin
-*/
-
-.sidebar {
-  display: flex; /* 1 */
-  flex-direction: column; /* 2 */
-  margin: -0.75em; /* 3 */
-  position: relative; /* 3 */
-}
 
 /* Combines with sidebar whitespace to form full gutter width */
 
