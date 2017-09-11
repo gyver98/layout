@@ -32,3 +32,8 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+.tile {
+  background-color: #35c98d;
+  min-height: 10em;
+}
