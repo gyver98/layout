@@ -5,10 +5,11 @@
 }
 
 body {
-  background: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  background: #456bd9;
+  font-family: Redacted, sans-serif;
   line-height: 1.5;
   margin: 0;
+  color: #fff;
 }
 
 
@@ -20,8 +21,17 @@ body {
   minmax(1em, 1fr) [full-end];
 }
 
+.content {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
 .content > * {
   grid-column: main;
+}
+
+.content > * + * {
+  margin-top: 1em;
 }
 
 .content-tiles {
