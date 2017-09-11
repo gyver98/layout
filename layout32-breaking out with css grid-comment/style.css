@@ -19,3 +19,7 @@ body {
   [main-start] minmax(0, 40em) [main-end]
   minmax(1em, 1fr) [full-end];
 }
+
+.content > * {
+  grid-column: main;
+}
