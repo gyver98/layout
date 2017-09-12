@@ -17,3 +17,20 @@
     grid-row: 1 / 4;
   }
 }
+
+@media all and (min-width: 53.125em) {
+  .box-feature .box-feature-title {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    align-self: start;
+    padding: 20px;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .box-feature .box-feature-title {
+    grid-column: 3 / -1;
+  }
+}
