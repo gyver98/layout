@@ -8,3 +8,12 @@
     grid-template-columns: repeat(6, 1fr);
   }
 }
+
+@media all and (min-width: 53.125em) {
+  .box-feature .box-image {
+    align-self: stretch;
+    justify-self: stretch;
+    grid-column: 1 / -1;
+    grid-row: 1 / 4;
+  }
+}
