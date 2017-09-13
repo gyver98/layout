@@ -114,3 +114,14 @@ a {
   margin-top: 10px;
 }
 
+.hero__author {
+  margin-top: 3px;
+}
+
+.hero__author .author {
+  display: block;
+}
+
+.hero__author .author:last-child {
+  margin-right: 0;
+}
