@@ -25,3 +25,15 @@ img {
   position: relative;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  max-width: 1270px;
+}
+
+.container::before {
+  content: " ";
+  display: table;
+}
+
