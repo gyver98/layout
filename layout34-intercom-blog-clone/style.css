@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.f__no-und {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__image {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 0;
+  text-align: center;
+  position: relative;
+}
+
