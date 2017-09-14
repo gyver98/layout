@@ -55,6 +55,10 @@ img {
   max-width: 100%;
 }
 
+img, svg {
+  vertical-align: middle;
+}
+
 a {
   color: inherit;
 }
