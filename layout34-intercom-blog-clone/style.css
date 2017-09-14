@@ -158,3 +158,7 @@ div.author {
   max-height: 28px;
   transition: color .15s;
 }
+
+.author__link:hover {
+  color: #b9dcfa;
+}
