@@ -55,8 +55,20 @@ img {
   max-width: 100%;
 }
 
+img, svg {
+  vertical-align: middle;
+}
+
 a {
   color: inherit;
+}
+
+div.author {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  line-height: 1.3;
+  font-size: 12px;
 }
 
 .hero {
@@ -126,8 +138,27 @@ a {
   margin-right: 0;
 }
 
+.author__image {
+  margin-right: 10px;
+  width: 35px;
+  display: inline-block;
+}
+
 .author__image img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+}
+
+.author__link {
+  font-weight: 500;
+  line-height: 1.4;
+  color: #1f8ceb;
+  display: inline-block;
+  max-height: 28px;
+  transition: color .15s;
+}
+
+.author__link:hover {
+  color: #b9dcfa;
 }
