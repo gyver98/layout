@@ -1,0 +1,7 @@
+.fill-viewport {
+  min-height: 100vh;
+}
+
+#introduction {
+  background: linear-gradient(rgba(100,181,246 ,1), rgba(0,0,0,0.8)), url('http://bit.ly/2fBj6OJ') 0% 0%/cover;
+}
