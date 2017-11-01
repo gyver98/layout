@@ -125,3 +125,9 @@ a {
 .hero__author .author:last-child {
   margin-right: 0;
 }
+
+.author__image img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
