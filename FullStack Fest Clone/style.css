@@ -24,3 +24,27 @@ body {
   display: block;
   z-index: -1;
 }
+
+/* 
+grid style
+*/
+
+.grid-container {
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  grid-template-areas: "i1 c1" "c2 i2";
+  grid-gap: 20px 0;
+}
+
+.i1 {
+  grid-area: i1;
+}
+.i2 {
+  grid-area: i2;
+}
+.c1 {
+  grid-area: c1;
+}
+.c2 {
+  grid-area: c2;
+}
