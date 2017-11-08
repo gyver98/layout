@@ -83,13 +83,13 @@ img {
 .crew-profile__title {
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: .8rem;
+  font-size: .9rem;
   letter-spacing: .1em;
 }
 
 .crew-profile__area {
   margin-top: auto;
   margin-bottom: 0;
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
