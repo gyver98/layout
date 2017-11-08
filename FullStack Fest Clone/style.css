@@ -79,3 +79,17 @@ img {
   font-weight: 700;
   color: #FFCF52;
 }
+
+.crew-profile__title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  letter-spacing: .1em;
+}
+
+.crew-profile__area {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: .8rem;
+}
+
