@@ -37,7 +37,8 @@ grid style
 .grid-container {
   display: grid;
   grid-template: auto/repeat(2, 1fr);
-  grid-template-areas: "i1 c1" "c2 i2";
+  grid-template-areas: 
+  "i1 c1" "c2 i2" "i3 c3" "c4 i4" "i5 c5" "c6 i6";
   grid-gap: 20px 0;
 }
 
@@ -122,6 +123,13 @@ img {
   border: 1px solid;
   border-image: linear-gradient(45deg, #FFCF52, #C0140A) 1;
   position: relative;
+}
+
+.crew-profile::before {
+  content: "";
+  position: absolute;
+  background: repeating-linear-gradient(-45deg, #021F6F 1px, #021F6F 4px, rgba(2,31,111,0.2) 4px, rgba(2,31,111,0.2) 6px);
+  display: none;
 }
 
 .crew-profile.back {
@@ -224,4 +232,19 @@ img {
       "c4 i5 c5"
       ".. c6 i6";
   }
+
+  .c1 .crew-profile, .c5 .crew-profile {
+    border-left-width: 20px;
+    margin-left: -20px;
+    width: calc(100% + 20px);
+  }
+
+  .c1 .crew-profile:before, .c5 .crew-profile:before {
+    width: 20px;
+    height: calc(100% + 2px);
+    left: -20px;
+    top: -1px;
+    display: block;
+  }  
+
 }
