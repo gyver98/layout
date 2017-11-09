@@ -70,7 +70,7 @@ grid style
 
 img {
   max-width: 100%;
-  filter: sepia(80%);
+  filter: url(#duotone);
 }
 
 .box img {
