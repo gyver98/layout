@@ -14,9 +14,8 @@ body {
   z-index: 1;
   padding-top: 26.5vw;
   padding-bottom: calc(14rem + 9vw);
-  color: #dfd9cd;  
+  color: #dfd9cd;
 }
-
 
 .contents::before {
   content: "";
@@ -29,6 +28,7 @@ body {
   display: block;
   z-index: -1;
 }
+
 
 /* 
 grid style
@@ -44,14 +44,49 @@ grid style
 .i1 {
   grid-area: i1;
 }
-.i2 {
-  grid-area: i2;
-}
+
 .c1 {
   grid-area: c1;
 }
+
+.i2 {
+  grid-area: i2;
+}
+
 .c2 {
   grid-area: c2;
+}
+
+.i3 {
+  grid-area: i3;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.i4 {
+  grid-area: i4;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.i5 {
+  grid-area: i5;
+}
+
+.c5 {
+  grid-area: c5;
+}
+
+.i6 {
+  grid-area: i6;
+}
+
+.c6 {
+  grid-area: c6;
 }
 
 .pagetitle {
@@ -99,6 +134,7 @@ img {
   border-image: linear-gradient(45deg, #C0140A, #FFCF52) 1;
 }
 
+
 /* .crew-profile:hover .crew-profile__name{
   color: #C0140A;
 } */
@@ -127,25 +163,27 @@ img {
   font-size: 1rem;
 }
 
-.crew-profile-back__title {
-  
-}
-
 .profile-hover {
   -webkit-perspective: 600px;
   perspective: 600px;
-  }
+}
+
+.profile-click {
+  -webkit-perspective: 600px;
+  perspective: 600px;
+}
 
 .front {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+}
 
 .back {
   position: absolute;
@@ -157,16 +195,33 @@ img {
   background: #162a45;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
+  transition: all 0.4s ease-in-out;
+}
 
 .flip .front {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
+  transform: rotateY(180deg);
+}
 
 .flip .back {
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg); }
+  transform: rotateY(0deg);
+}
+
+/* media query */
+
+@media (max-width: 56.25em) and (min-width: 43.75em) {
+  .grid-container {
+    grid-template: repeat(5, 1fr)/repeat(3, 1fr);
+    grid-template-areas: 
+      "i1 c1 .."
+      "c2 i2 c3"
+      "i4 .. i3"
+      "c4 i5 c5"
+      ".. c6 i6";
+  }
+}
