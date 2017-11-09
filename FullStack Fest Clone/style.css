@@ -106,7 +106,6 @@ grid style
 
 img {
   max-width: 100%;
-  filter: url(#duotone);
 }
 
 .box img {
@@ -140,6 +139,14 @@ img {
 
 .crew-profile:hover {
   border-image: linear-gradient(45deg, #C0140A, #FFCF52) 1;
+}
+
+.crew-photo {
+  filter: url(#duotone);
+  transition: 0.5s;
+}
+.crew-photo:hover {
+  opacity: 0.8;
 }
 
 
