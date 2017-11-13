@@ -286,6 +286,20 @@ img {
     left: -1px;
     bottom: -20px;
     display: block;
+  }
+  
+  .c4 .crew-profile {
+    border-top-width: 20px;
+    margin-top: -20px;
+    height: calc(100% + 20px);
+  }
+
+  .c4 .crew-profile:before {
+    height: 20px;
+    width: calc(100% + 2px);
+    left: -1px;
+    top: -20px;
+    display: block;
   }  
 
 }
