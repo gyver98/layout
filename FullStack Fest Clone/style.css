@@ -243,6 +243,7 @@ img {
       "i4 .. i3"
       "c4 i5 c5"
       ".. c6 i6";
+    grid-gap: 20px;
   }
 
   .c1 .crew-profile, .c5 .crew-profile {
@@ -270,6 +271,20 @@ img {
     height: calc(100% + 2px);
     right: -20px;
     top: -1px;
+    display: block;
+  }
+  
+  .c3 .crew-profile {
+    border-bottom-width: 20px;
+    margin-bottom: -20px;
+    height: calc(100% + 20px);
+  }
+
+  .c3 .crew-profile:before {
+    height: 20px;
+    width: calc(100% + 2px);
+    left: -1px;
+    bottom: -20px;
     display: block;
   }  
 
