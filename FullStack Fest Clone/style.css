@@ -136,6 +136,12 @@ img {
   display: none;
 }
 
+@supports (display: grid) {
+  .crew-profile::before {
+    display: block;
+  }
+}
+
 .crew-profile.back {
   display: flex;
   justify-content: center;
@@ -151,9 +157,9 @@ img {
   transition: 0.5s;
 }
 .crew-photo:hover {
-  /* opacity: 0.8; */
-  filter: saturate(30%);
-  transition: 0.5s;
+  opacity: 0.8;
+  /* filter: saturate(30%);
+  transition: 0.5s; */
 }
 
 
@@ -236,7 +242,7 @@ img {
 
 /* media query */
 
-@media (max-width: 56.25em) and (min-width: 43.75em) {
+@media (min-width: 43.75em) and (max-width: 56.25em) {
   .grid-container {
     grid-template: repeat(5, 1fr)/repeat(3, 1fr);
     grid-template-areas: 
@@ -253,7 +259,12 @@ img {
     height: calc(100% + 2px);
     left: -20px;
     top: -1px;
-    display: block;
+    display: none;
+  }
+  @supports (display:grid) {
+    .c1 .crew-profile:before, .c5 .crew-profile:before {
+      display: block;
+    }  
   }  
   .c1 .crew-profile, .c5 .crew-profile {
     border-left-width: 20px;
@@ -268,8 +279,13 @@ img {
     height: calc(100% + 2px);
     right: -20px;
     top: -1px;
-    display: block;
+    display: none;
   }
+  @supports (display:grid) {
+    .c2 .crew-profile:before, .c6 .crew-profile:before {
+      display: block;
+    }  
+  }  
   .c2 .crew-profile, .c6 .crew-profile {
     border-right-width: 20px;
     margin-right: -20px;
@@ -282,8 +298,14 @@ img {
     width: calc(100% + 2px);
     left: -1px;
     bottom: -20px;
-    display: block;
+    display: none;
   }
+  @supports (display:grid) {
+    .c3 .crew-profile:before {
+      display: block;
+    }  
+  }  
+
   .c3 .crew-profile {
     border-bottom-width: 20px;
     margin-bottom: -20px;
@@ -295,19 +317,22 @@ img {
     width: calc(100% + 2px);
     left: -1px;
     top: -20px;
-    display: block;
-  }  
+    display: none;
+  }
+  @supports (display:grid) {
+    .c4 .crew-profile:before {
+      display: block;
+    }  
+  }    
   .c4 .crew-profile {
     border-top-width: 20px;
     margin-top: -20px;
     height: calc(100% + 20px);
   }
 
-  
-
 }
 
-@media (max-width: 100em) and (min-width: 56.25em) {
+@media (min-width: 56.25em) and (max-width: 100em) {
   .grid-container {
     grid-template: repeat(4, 1fr)/repeat(4, 1fr);
     grid-template-areas: 
@@ -323,8 +348,13 @@ img {
     height: calc(100% + 2px);
     left: -20px;
     top: -1px;
-    display: block;
-  }  
+    display: none;
+  }
+  @supports (display:grid) {
+    .c1 .crew-profile:before, .c6 .crew-profile:before {
+      display: block;
+    }  
+  }    
   .c1 .crew-profile, .c6 .crew-profile {
     border-left-width: 20px;
     margin-left: -20px;
@@ -336,9 +366,13 @@ img {
     width: calc(100% + 2px);
     left: -1px;
     top: -20px;
-    display: block;
+    display: none;
   }
-
+  @supports (display:grid) {
+    .c2 .crew-profile:before, .c3 .crew-profile:before {
+      display: block;
+    }  
+  }  
   .c2 .crew-profile, .c3 .crew-profile {
     border-top-width: 20px;
     margin-top: -20px;
@@ -350,9 +384,13 @@ img {
     height: calc(100% + 2px);
     top: -1px;
     right: -20px;
-    display: block;
+    display: none;
   }
-  
+  @supports (display:grid) {
+    .c4 .crew-profile:before, .c5 .crew-profile:before {
+      display: block;
+    }  
+  }  
   .c4 .crew-profile, .c5 .crew-profile{
     border-right-width: 20px;
     margin-right: -20px;
