@@ -311,17 +311,24 @@ img {
 
 @media (min-width: 43.75em) and (max-width: 56.25em) {
   .grid-container {
-    grid-template: repeat(5, 1fr)/repeat(3, 1fr);
+    grid-template: repeat(11, 1fr)/repeat(3, 1fr);
     grid-template-areas: 
-      "i1 c1 .."
-      "c2 i2 c3"
-      "i4 .. i3"
-      "c4 i5 c5"
-      ".. c6 i6";
+    "i1 c1 ..." 
+    "c2 i2 c3" 
+    "i4 ... i3" 
+    "c4 i5 c5" 
+    "... c6 i6" 
+    "i7 c7 i8" 
+    "c9 ... c8" 
+    "i9 c10 i11" 
+    "... i10 c11" 
+    "i12 c13 i13" 
+    "c12 ... c14"
+    "... c15 i14"; 
     grid-gap: 20px;
   }
 
-  .c1 .crew-profile:before, .c5 .crew-profile:before {
+  .c1 .crew-profile:before, .c5 .crew-profile:before, .c7 .crew-profile:before {
     width: 20px;
     height: calc(100% + 2px);
     left: -20px;
@@ -329,11 +336,11 @@ img {
     display: none;
   }
   @supports (display:grid) {
-    .c1 .crew-profile:before, .c5 .crew-profile:before {
+    .c1 .crew-profile:before, .c5 .crew-profile:before, .c7 .crew-profile:before {
       display: block;
     }  
   }  
-  .c1 .crew-profile, .c5 .crew-profile {
+  .c1 .crew-profile, .c5 .crew-profile, .c7 .crew-profile {
     border-left-width: 20px;
     margin-left: -20px;
     width: calc(100% + 20px);
@@ -360,7 +367,7 @@ img {
   }
 
 
-  .c3 .crew-profile:before {
+  .c3 .crew-profile:before, .c9 .crew-profile:before, .c10 .crew-profile:before, .c14 .crew-profile:before {
     height: 20px;
     width: calc(100% + 2px);
     left: -1px;
@@ -368,18 +375,18 @@ img {
     display: none;
   }
   @supports (display:grid) {
-    .c3 .crew-profile:before {
+    .c3 .crew-profile:before, .c9 .crew-profile:before, .c10 .crew-profile:before, .c14 .crew-profile:before {
       display: block;
     }  
   }  
 
-  .c3 .crew-profile {
+  .c3 .crew-profile, .c9 .crew-profile, .c10 .crew-profile, .c14 .crew-profile {
     border-bottom-width: 20px;
     margin-bottom: -20px;
     height: calc(100% + 20px);
   }
   
-  .c4 .crew-profile:before {
+  .c4 .crew-profile:before, .c8 .crew-profile:before, .c11 .crew-profile:before, .c12 .crew-profile:before {
     height: 20px;
     width: calc(100% + 2px);
     left: -1px;
@@ -387,11 +394,11 @@ img {
     display: none;
   }
   @supports (display:grid) {
-    .c4 .crew-profile:before {
+    .c4 .crew-profile:before, .c8 .crew-profile:before, .c11 .crew-profile:before, .c12 .crew-profile:before {
       display: block;
     }  
   }    
-  .c4 .crew-profile {
+  .c4 .crew-profile, .c8 .crew-profile, .c11 .crew-profile, .c12 .crew-profile {
     border-top-width: 20px;
     margin-top: -20px;
     height: calc(100% + 20px);
