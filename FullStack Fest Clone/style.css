@@ -43,7 +43,9 @@ grid style
   display: grid;
   grid-template: auto/repeat(2, 1fr);
   grid-template-areas: 
-  "i1 c1" "c2 i2" "i3 c3" "c4 i4" "i5 c5" "c6 i6";
+  "i1 c1" "c2 i2" "i3 c3" "c4 i4" "i5 c5" "c6 i6"
+  "i7 c7" "c8 i8" "i9 c9" "c10 i10" "i11 c11" "c12 i12"
+  "i13 c13" "c14 i14";
   grid-gap: 20px 0;
 }
 
@@ -94,6 +96,71 @@ grid style
 .c6 {
   grid-area: c6;
 }
+
+.i7 {
+  grid-area: i7;
+}
+
+.c7 {
+  grid-area: c7;
+}
+
+.i8 {
+  grid-area: i8;
+}
+
+.c8 {
+  grid-area: c8;
+}
+
+.i9 {
+  grid-area: i9;
+}
+
+.c9 {
+  grid-area: c9;
+}
+
+.i10 {
+  grid-area: i10;
+}
+
+.c10 {
+  grid-area: c10;
+}
+
+.i11 {
+  grid-area: i11;
+}
+
+.c11 {
+  grid-area: c11;
+}
+
+.i12 {
+  grid-area: i12;
+}
+
+.c12 {
+  grid-area: c12;
+}
+
+.i13 {
+  grid-area: i13;
+}
+
+.c13 {
+  grid-area: c13;
+}
+
+.i14 {
+  grid-area: i14;
+}
+
+.c14 {
+  grid-area: c14;
+}
+
 
 .pagetitle {
   color: #134589;
