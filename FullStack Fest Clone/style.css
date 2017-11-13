@@ -9,6 +9,11 @@ body {
   font-weight: 300;
 }
 
+main {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
 .contents {
   position: relative;
   z-index: 1;
@@ -250,6 +255,20 @@ img {
     width: 20px;
     height: calc(100% + 2px);
     left: -20px;
+    top: -1px;
+    display: block;
+  }  
+
+  .c2 .crew-profile, .c6 .crew-profile {
+    border-right-width: 20px;
+    margin-right: -20px;
+    width: calc(100% + 20px);
+  }
+
+  .c2 .crew-profile:before, .c6 .crew-profile:before {
+    width: 20px;
+    height: calc(100% + 2px);
+    right: -20px;
     top: -1px;
     display: block;
   }  
