@@ -481,7 +481,7 @@ img {
       display: block;
     }  
   }  
-  .c4 .crew-profile, .c5 .crew-profile, .c9 .crew-profile:before, .c11 .crew-profile:before, .c13 .crew-profile:before{
+  .c4 .crew-profile, .c5 .crew-profile, .c9 .crew-profile, .c11 .crew-profile, .c13 .crew-profile {
     border-right-width: 20px;
     margin-right: -20px;
     width: calc(100% + 20px);
