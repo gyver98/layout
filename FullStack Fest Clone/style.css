@@ -34,6 +34,36 @@ main {
   z-index: -1;
 }
 
+.filter-member {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-member li {
+  display: inline-block;
+}
+
+.filter-member__option {
+  border: 0;
+  background: none;
+  font-size: 1rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #FFCF52;
+  padding: 0 .5rem;
+  position: relative;
+  transition: .3s;
+}
+
+@media (min-width: 31.25em) {
+  .filter-member__option {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+}
 
 /* 
 grid style
