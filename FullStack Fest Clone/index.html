@@ -24,14 +24,14 @@
     <main>
       <ul class="filter-member">
         <li><button class="filter-member__option active" data-filtermember>All</button></li>
-        <li><button class="filter-member__option" data-filtermember="melbourne">Melbourne</button></li>
-        <li><button class="filter-member__option" data-filtermember="sydney">Sydney</button></li>
+        <li><button class="filter-member__option" data-filtermember="melbourne-active">Melbourne</button></li>
+        <li><button class="filter-member__option" data-filtermember="sydney-active">Sydney</button></li>
       </ul>
-      <section class="grid-container">
-        <div class="box crew-photo i1">
+      <section class="grid-container" data-filteractive>
+        <div class="box crew-photo i1" data-track="melbourne">
           <img src="img/asset 2.jpeg" alt="">
         </div>
-        <div class="box profile-hover c1">
+        <div class="box profile-hover c1" data-track="melbourne">
           <div class="crew-profile front">
             <h1 class="crew-profile__name">Jenn Schiffer</h1>
             <span class="crew-profile__title">Frontend Developer</span>
@@ -42,10 +42,10 @@
           </div>
         </div>
 
-        <div class="box crew-photo i2">
+        <div class="box crew-photo i2" data-track="sydney">
           <img src="img/asset 3.jpeg" alt="">
         </div>
-        <div class="box profile-hover c2">
+        <div class="box profile-hover c2" data-track="sydney">
           <div class="crew-profile front">
             <h1 class="crew-profile__name"> Karissa McKelvey </h1>
             <span class="crew-profile__title">Frontend Developer</span>
@@ -56,10 +56,10 @@
           </div>
         </div>
         
-        <div class="box crew-photo i3">
+        <div class="box crew-photo i3" data-track="melbourne">
             <img src="img/asset 4.jpeg" alt="">
           </div>
-          <div class="box profile-hover c3">
+          <div class="box profile-hover c3" data-track="melbourne">
             <div class="crew-profile front">
               <h1 class="crew-profile__name"> Sarah Drasner </h1>
               <span class="crew-profile__title">Frontend Developer</span>
@@ -70,10 +70,10 @@
             </div>
           </div>
           
-          <div class="box crew-photo i4">
+          <div class="box crew-photo i4" data-track="sydney">
             <img src="img/asset 5.jpeg" alt="">
           </div>
-          <div class="box profile-hover c4">
+          <div class="box profile-hover c4" data-track="sydney">
             <div class="crew-profile front">
               <h1 class="crew-profile__name">  John Graham-Cumming  </h1>
               <span class="crew-profile__title">Frontend Developer</span>
@@ -84,10 +84,10 @@
             </div>
           </div>
 
-          <div class="box crew-photo i5">
+          <div class="box crew-photo i5" data-track="melbourne">
               <img src="img/asset 6.jpeg" alt="">
             </div>
-            <div class="box profile-hover c5">
+            <div class="box profile-hover c5" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name">Nikita Baksalyar</h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -98,10 +98,10 @@
               </div>
             </div>
             
-            <div class="box crew-photo i6">
+            <div class="box crew-photo i6" data-track="sydney">
               <img src="img/asset 7.jpeg" alt="">
             </div>
-            <div class="box profile-hover c6">
+            <div class="box profile-hover c6" data-track="sydney">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name">James Burns</h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -112,10 +112,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i7">
+            <div class="box crew-photo i7" data-track="melbourne">
               <img src="img/asset 8.jpeg" alt="">
             </div>
-            <div class="box profile-hover c7">
+            <div class="box profile-hover c7" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Martin Splitt </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -126,10 +126,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i8">
+            <div class="box crew-photo i8" data-track="sydney">
               <img src="img/asset 9.jpeg" alt="">
             </div>
-            <div class="box profile-hover c8">
+            <div class="box profile-hover c8" data-track="sydney">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name">  Marcia Villalba  </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -140,10 +140,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i9">
+            <div class="box crew-photo i9" data-track="sydney">
               <img src="img/asset 10.jpeg" alt="">
             </div>
-            <div class="box profile-hover c9">
+            <div class="box profile-hover c9" data-track="sydney">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name">Chad Ostrowski</h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -154,10 +154,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i10">
+            <div class="box crew-photo i10" data-track="melbourne">
               <img src="img/asset 11.jpeg" alt="">
             </div>
-            <div class="box profile-hover c10">
+            <div class="box profile-hover c10" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Anton Babenko </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -168,10 +168,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i11">
+            <div class="box crew-photo i11" data-track="melbourne">
               <img src="img/asset 12.jpeg" alt="">
             </div>
-            <div class="box profile-hover c11">
+            <div class="box profile-hover c11" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Luis Montes </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -182,10 +182,10 @@
               </div>
             </div>
             
-            <div class="box crew-photo i12">
+            <div class="box crew-photo i12" data-track="sydney">
               <img src="img/asset 13.jpeg" alt="">
             </div>
-            <div class="box profile-hover c12">
+            <div class="box profile-hover c12" data-track="sydney">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name">Jerome Scheuring</h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -196,10 +196,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i13">
+            <div class="box crew-photo i13" data-track="melbourne">
               <img src="img/asset 14.jpeg" alt="">
             </div>
-            <div class="box profile-hover c13">
+            <div class="box profile-hover c13" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Alex Qin </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -210,10 +210,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i14">
+            <div class="box crew-photo i14" data-track="melbourne">
               <img src="img/asset 15.jpeg" alt="">
             </div>
-            <div class="box profile-hover c14">
+            <div class="box profile-hover c14" data-track="melbourne">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Jeremy Walker </h1>
                 <span class="crew-profile__title">Frontend Developer</span>
@@ -224,10 +224,10 @@
               </div>
             </div>
 
-            <div class="box crew-photo i15">
+            <div class="box crew-photo i15" data-track="sydney">
               <img src="img/asset 16.jpeg" alt="">
             </div>
-            <div class="box profile-hover c15">
+            <div class="box profile-hover c15" data-track="sydney">
               <div class="crew-profile front">
                 <h1 class="crew-profile__name"> Natalie Pistunovich </h1>
                 <span class="crew-profile__title">Frontend Developer</span>

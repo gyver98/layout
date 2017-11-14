@@ -88,9 +88,25 @@ main {
   }
 }
 
+/* filtering member based on location */
+
+.grid-container [data-track] {
+  transition: .7s;
+}
+
+.grid-container[data-filterActive="melbourne-active"] [data-track="sydney"] {
+  opacity: .1;
+  pointer-events: none;
+}
+.grid-container[data-filterActive="sydney-active"] [data-track="melbourne"] {
+  opacity: .1;
+  pointer-events: none;
+}
+
 /* 
 grid style
 */
+
 
 .grid-container {
   display: grid;
@@ -101,6 +117,8 @@ grid style
   "i13 c13" "c14 i14" "i15 c15";
   grid-gap: 20px 0;
 }
+
+
 
 .i1 {
   grid-area: i1;

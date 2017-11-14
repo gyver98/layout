@@ -15,5 +15,19 @@ $(document).ready(function(){
       },function(){
         $(this).removeClass('flip');
       });
+
+      function filterTrack() {
+        function t() {
+            var t = this.getAttribute("data-filtermember");
+            e.setAttribute("data-filterActive", t),
+            document.querySelector("[data-filtermember].active").classList.remove("active"),
+            this.classList.add("active")
+        }
+        var e = document.querySelector(".grid-container");
+        e && document.querySelectorAll("[data-filtermember]").forEach(function(e) {
+            e.addEventListener("click", t)
+        })
+    }
+    filterTrack();
   
     });
