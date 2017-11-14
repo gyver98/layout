@@ -58,6 +58,29 @@ main {
   transition: .3s;
 }
 
+.filter-member__option.active, .filter-member__option:hover,
+.filter-member__option.active, .filter-member__option:focus {
+  cursor: pointer;
+  color: #C0140A;
+  outline: none;
+}
+
+.filter-member__option:after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(255,207,82,0.3);
+}
+
+.filter-member li:last-of-type .filter-member__option:after {
+  display: none;
+}
+
+
 @media (min-width: 31.25em) {
   .filter-member__option {
     font-size: 1.2rem;
