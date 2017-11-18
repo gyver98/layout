@@ -34,6 +34,10 @@ main {
   z-index: -1;
 }
 
+section {
+  background-image: url("./img/asset 20.png");
+}
+
 .filter-member {
   list-style: none;
   padding-left: 0;
